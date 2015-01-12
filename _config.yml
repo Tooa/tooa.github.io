@@ -1,2 +1,8 @@
+title: Uli Fahrer
 permalink: /notes/:year/:month/:day/:title
 markdown: kramdown
+baseurl: ""
+description: "Uli Fahrer: CS Student, Developer"
+
+twitter_username: UliFahrer
+github_username:  Tooa

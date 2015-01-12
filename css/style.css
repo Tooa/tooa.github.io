@@ -58,7 +58,7 @@ ul.swatch li:first-child { webkit-border-top-left-radius: 9px; -webkit-border-bo
 .cv h2 { font-size: 26.5px; }
 .cv h1 { font-size: 32.5px; }
 
-.notes, .contact, .about, .cv, .error, .swatches { margin-bottom: 30px; }
+.publications, .projects, .about, .cv, .error { margin-bottom: 30px; }
 
 /* Contact */
 iframe {font-family: 'Merriweather', Georgia, Times; font-size: 16px;}
@@ -93,3 +93,16 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 	font-family: 'Montserrat', Helvetica, sans-serif; }
 
 
+.github-icon-svg,
+.twitter-icon-svg {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	position: relative;
+	top: 3px;
+}
+
+.username {
+	font-family:  'Arial', Helvetica, sans-serif;
+	font-size: 12px;
+}
