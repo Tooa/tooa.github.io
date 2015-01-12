@@ -1,3 +1,2 @@
-title: Personal Site
-name: "Uli Fahrer: CS Student, Developer"
+permalink: /notes/:year/:month/:day/:title
 markdown: kramdown
