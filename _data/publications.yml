@@ -24,3 +24,14 @@
   url: http://maggie.lt.informatik.tu-darmstadt.de/BTWitter/static/files/workshop_paper.pdf
   type: workshop
   
+- title: >
+      "Network of the Day: Interactive Visualization of
+      Time-Dependent Entity Relation Networks"
+  author: >
+      Uli Fahrer, Darina Benikova, Alexander Gabriel, Manuel Kaufmann, 
+      Seid Muhie Yimam, Tatiana von Landesberger and Chris Biemann
+  year: 2014
+  booktitle: Vision Modeling Visualization Workshop
+  publisher: TU Darmstadt, Germany
+  url: http://www.gris.tu-darmstadt.de/research/vissearch/publications/pdf/VMV_NetworkOfTheDay.pdf
+  type: poster

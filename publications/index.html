@@ -6,23 +6,12 @@ description: Current puplications
 permalink: /publications/
 ---
 <div class="publications">
+	{% assign sorted_workshops = (site.data.publications | sort: 'year') %}
 	<ul>
 		<h3>Workshop proceedings</h3>
-
-		{% assign sorted_workshops = (site.data.publications | sort: 'year') %}
-		{% for publication in sorted_workshops reversed %}
-			{% if publication.type == "workshop" %}
-				<li>	
-					<p><small>
-						{{ publication.author }} ({{ publication.year }}): {{ publication.title }}.
-						{{ publication.booktitle }},
-						{% if publication.pages %}
-						 pages {{ publication.pages }},
-						{% endif %}
-						{{ publication.publisher }} (<a href="{{ publication.url }}">pdf</a>).
-					</small></p>
-				</li>
-			{% endif %}
-		{% endfor %}
+		{% include publication-list.html publications=sorted_workshops type="workshop" %}
+		
+		<h3>Poster proceedings</h3>
+		{% include publication-list.html publications=sorted_workshops type="poster" %}
 	</ul>
 </div> <!-- .publications -->

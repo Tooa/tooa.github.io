@@ -1,0 +1,14 @@
+{% for publication in include.publications reversed %}
+    {% if publication.type == include.type %}
+    <li>
+        <p><small>
+            {{ publication.author }} ({{ publication.year }}): {{ publication.title }}.
+            {{ publication.booktitle }},
+            {% if publication.pages %}
+            pages {{ publication.pages }},
+            {% endif %}
+            {{ publication.publisher }} (<a href="{{ publication.url }}">pdf</a>).
+        </small></p>
+    </li>
+    {% endif %}
+{% endfor %}
