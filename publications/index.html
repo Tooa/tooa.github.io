@@ -7,11 +7,24 @@ permalink: /publications/
 ---
 <div class="publications">
 	{% assign sorted_workshops = (site.data.publications | sort: 'year') %}
-	<ul>
 		<h3>Workshop proceedings</h3>
 		{% include publication-list.html publications=sorted_workshops type="workshop" %}
 		
 		<h3>Poster proceedings</h3>
 		{% include publication-list.html publications=sorted_workshops type="poster" %}
-	</ul>
+
+        <h3>Other Contributions</h3>
+        <ul>
+            <li>
+                <p><small>
+                    Ulrich Ammon (2015) "Die Stellung der deutschen Sprache in der Welt".
+                    Berlin/ München/ Boston: Walter de Gruyter (<a href="http://www.goo.gl/FEkfB4">pdf</a>).
+                </small></p>
+                <p>During my work as student assistant for the <a href="lt.tu-darmstadt.de/de/lt-home/">Language Technology Group</a>
+                I've contributed a Twitter-Analysis to the book <i>"Die Stellung der deutschen Sprache in der Welt"</i>
+                written by <a href="http://www.ulrichammon.de/">Prof. Dr. Phil. Ulrich Amorn</a>.The book is available on <a href="goo.gl/2Y3eCN">Amazon</a>.
+                </p>
+            </li>
+        </ul>
+
 </div> <!-- .publications -->
