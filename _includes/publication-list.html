@@ -1,7 +1,7 @@
 <div class="panel panel-info">
     <div class="panel-heading"><strong>{{ include.headline }}</strong></div>
     <div class="panel-body">
-        <ul>
+        <ol>
             {% for publication in include.publications reversed %}
                 {% if publication.type == include.type %}
                 <li>
@@ -21,7 +21,7 @@
                 </li>
                 {% endif %}
             {% endfor %}
-        </ul>
+        </ol>
     </div>
 </div>
 
