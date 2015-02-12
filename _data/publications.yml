@@ -35,3 +35,16 @@
   publisher: TU Darmstadt, Germany
   url: http://www.gris.tu-darmstadt.de/research/vissearch/publications/pdf/VMV_NetworkOfTheDay.pdf
   type: poster
+
+
+- title: >
+    "Die Stellung der deutschen Sprache in der Welt"
+  author: Ulrich Ammon
+  year: 2015
+  publisher: "Berlin/ München/ Boston: Walter de Gruyter"
+  url: http://www.goo.gl/FEkfB4
+  meta: |
+    During my work as student assistant for the <a href="lt.tu-darmstadt.de/de/lt-home/">Language Technology Group</a>
+                    I've contributed a Twitter-Analysis to the book <i>"Die Stellung der deutschen Sprache in der Welt"</i>
+                    written by <a href="http://www.ulrichammon.de/">Prof. Dr. Phil. Ulrich Amorn</a>.The book is available on <a href="goo.gl/2Y3eCN">Amazon</a>
+  type: book
