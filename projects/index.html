@@ -1,9 +1,56 @@
 ---
 layout: page
 title: Projects
-notes: active
+projects: active
 description: Project site
 ---
 <div class="projects">
+    <!--TODO: Add index for projects click on and scroll-->
+
+    {% for project in site.data.projects %}
+        <h3>{{ project.title }} <small>{{ project.tagline }}</small></h3>
+        <div class="well well-sm">
+            <strong>{{ project.time }}</strong> » <span class="text-info">Toolstack:</span> {{ project.tools }}
+            <dl>
+                <dt>Information:</dt>
+                <dd>
+                    <ul class="list-inline">
+                        <li>
+                            {% icon fa-github%}
+                            <a href="https://github.com/{{ project.github }}">View on GitHub</a>
+                        </li>
+                        <li>
+                            {% icon fa-download %}
+                            <a href="https://github.com/{{ project.github }}">Download</a>
+                        </li>
+                        <li>
+                            {% icon fa-home %}
+                            <a href="{{ project.website }}">Project Site</a>
+                        </li>
+                    </ul>
+                </dd>
+                <dt>Tasks</dt>
+                <dd>{{ project.tasks }}</dd>
+            </dl>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Description
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                    {{ project.description | markdownify }}
+                </div>
+            </div>
+        </div>
+
+    {% endfor %}
+
+
 
 </div> <!-- .projects -->

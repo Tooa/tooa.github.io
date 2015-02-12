@@ -1,0 +1,22 @@
+# Projects
+---
+
+- title: KaVE Feedback Generator
+  time: 2013-2015
+  tagline: VS feedback collector
+  tools: C#, XAML, WPF,  Visual studio, Resharper
+  url: https://resharper-plugins.jetbrains.com/packages/KaVE.VsFeedbackGenerator/
+  website: http://www.kave.cc/
+  tasks: Responsible for ...
+  description: |
+    The **KaVE project** is about improving developers experience with C# and Visual Studio.
+    One part of the project is to learn about the average developer. To do so, we invite developer to generate (and provide)
+    feedback that reflects their interactions with the development environment.
+
+    This includes general actions such as the completion of code, the refactoring of bad code or the navigation
+    through any Visual Studio menu. The feedback generation does not disturb the programming flow, data is collected in
+    the background and stored on your local hard disk.
+
+    Once in a while, the feedback generator will ask you to provide the generated feedback. You can review
+    it and even delete parts of it, before uploading it to our server.
+  github: stg-tud/kave
