@@ -6,3 +6,5 @@ description: "Uli Fahrer: CS Student, Developer"
 
 twitter_username: UliFahrer
 github_username:  Tooa
+
+gems: [jekyll-font-awesome]
