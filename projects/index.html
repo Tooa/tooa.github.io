@@ -8,49 +8,65 @@ description: Project site
     <!--TODO: Add index for projects click on and scroll-->
 
     {% for project in site.data.projects %}
-        <h3>{{ project.title }} <small>{{ project.tagline }}</small></h3>
-        <div class="well well-sm ">
-            <strong>{{ project.time }}</strong> » <span class="text-info">Toolstack:</span> {{ project.tools }}
-            <dl>
-                <dt>Information:</dt>
-                <dd>
-                    <ul class="list-inline">
-                        <li>
-                            <span class="fa fa-github"></span>
-                            <a href="https://github.com/{{ project.github }}">View on GitHub</a>
-                        </li>
-                        <li>
-                            <span class="fa fa-download"></span>
-                            <a href="{{ project.url }}">Download</a>
-                        </li>
+        <div class="well">
+            <div class="media">
+                <div class="media-body">
+                    <h3 class="media-heading text-info">{{ project.title }}</h3>
+
+                    <div class="panel panel-primary">
+                        <!-- Default panel contents -->
+                        <div class="panel-heading"><h4 class="panel-title">General</h4></div>
+                        <div class="panel-body">
+                            <p>
+                                <span class="fa fa-wrench"></span>
+                                <span class="text-info">Toolstack:</span> {{ project.tools }}
+                            </p>
+
+                            <p>
+                                <span class="fa fa-group"></span>
+                                <span class="text-info">Responsibilities:</span> {{ project.tasks }}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="panel panel-info">
+                        <div class="panel-heading" role="tab">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Description
+                                </a>
+                            </h4>
+                        </div>
+
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel">
+                            <div class="panel-body">
+                                {{ project.description | markdownify }}
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <ul class="list-inline list-unstyled">
+                        <li><span><i class="glyphicon glyphicon-calendar"></i> {{ project.time }}</span></li>
+                        <li>|</li>
                         <li>
                             <span class="fa fa-home"></span>
                             <a href="{{ project.website }}">Project Site</a>
                         </li>
+                        <li>|</li>
+                        <li>
+                            <span class="fa fa-github"></span>
+                            <a href="https://github.com/{{ project.github }}">View on GitHub</a>
+                        </li>
+                        <li>|</li>
+                        <li>
+                            <span class="fa fa-download"></span>
+                            <a href="{{ project.url }}">Download</a>
+                        </li>
                     </ul>
-                </dd>
-                <dt>Tasks</dt>
-                <dd>{{ project.tasks }}</dd>
-            </dl>
-        </div>
-
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Description
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel">
-                <div class="panel-body">
-                    {{ project.description | markdownify }}
                 </div>
             </div>
         </div>
-
     {% endfor %}
-
-
 
 </div> <!-- .projects -->

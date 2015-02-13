@@ -20,18 +20,6 @@ img.avatar { margin-bottom: 30px; }
 .container > hr { margin: 30px 0; }
 .container > hr.footer {margin-bottom: 15px; }
 
-/* Swatches */
-.swatch-log h2.date { margin-bottom: 30px; }
-.swatch-log { margin: 30px auto 70px; height: 140px; }
-ul.swatch { list-style: none; margin: 0 auto; padding: 0; height: 50px; }
-ul.swatch li { text-transform: uppercase; display: inline; float: left; height: 80px; width: 75px; text-indent: -9999px; font-size: 14px; text-align: center; font-family: 'Montserrat', Helvetica, sans-serif; background-image: url(/img/glass.png); background-repeat: repeat-x; background-position: 0 50%;}
-ul.swatch li:hover { height: 75px; width: 75px; vertical-align: middle; text-indent: 0; }
-
-
-.swatch-log p { font-size: 14px; clear: left; margin-top: 10px; font-family: 'Montserrat', Helvetica, sans-serif; text-transform: uppercase; }
-.clear { clear: both; height: 20px; }
-
-
 .publications, .projects, .events, .lectures, .about, .cv, .error { margin-bottom: 30px; }
 
 /* Contact */
@@ -71,3 +59,6 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 	font-family:  'Arial', Helvetica, sans-serif;
 	font-size: 12px;
 }
+
+dt, dd { margin-top: 10px; }
+
