@@ -8,6 +8,7 @@
   url: https://resharper-plugins.jetbrains.com/packages/KaVE.VsFeedbackGenerator/
   website: http://www.kave.cc/
   tasks: Responsible for ...
+  image: "kave.png"
   description: |
     The **KaVE project** is about improving developers experience with C# and Visual Studio.
     One part of the project is to learn about the average developer. To do so, we invite developer to generate (and provide)
