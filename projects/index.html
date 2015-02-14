@@ -17,16 +17,22 @@ description: Project site
                     <img class="img-responsive" src="../img/{{ project.image }}">
                 {% endif %}
                 <p>{{ project.description | markdownify }}</p>
-                <p>
-                    <span class="fa fa-wrench"></span>
-                    <span class="text-info">Toolstack:</span><strong> {{ project.tools }}</strong>
-                </p>
 
-                <p>
-                    <span class="fa fa-group"></span>
-                    <span class="text-info">Responsibilities:</span> {{ project.tasks }}
-                </p>
+                <dl>
+                    {% if project.thanks %}
+                        <dt><span class="fa fa-star"></span> Acknowledgement</dt>
+                        <dd>{{ project.thanks }}</dd>
+                    {% endif %}
 
+                    <dt><span class="fa fa-wrench"></span> Toolstack</dt>
+                    <dd>{{ project.tools }}</dd>
+
+                    <dt><span class="fa fa-group"></span> Position</dt>
+                    <dd>{{ project.position }}</dd>
+
+                    <dt><span class="fa fa-user"></span> Responsibilities</dt>
+                    <dd>{{ project.tasks }}</dd>
+                </dl>
             </div>
             <div class="panel-footer panel-default">
                 <ul class="list-inline list-unstyled">

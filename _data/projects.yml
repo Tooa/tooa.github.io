@@ -1,12 +1,34 @@
 # Projects
 ---
 
+- title: “Netzwerk des Tages” (Network of the Day)
+  time: 2014
+  tools: Scala, Java, Coffeescript, JQuery, Play Framework, D3.js, Highcharts, Marionette.js
+  url: http://maggie.lt.informatik.tu-darmstadt.de/nod/
+  website: http://www.tagesnetzwerk.de
+  position: student assistant
+  tasks: Responsible for ...
+  image: "nod.png"
+  description: |
+    This is a project on the interactive visualization of social media data. The data
+    presentation fuses German Twitter data and a social relation network extracted from
+    German online news. Such fusion allows for comparative analysis of the two types of
+    media. Our system will additionally enable users to explore relationships between
+    named entities, and to investigate events as they develop over time. Cooperative tagging
+    of relationships is enabled through the active involvement of users. The system is available
+    online for a broad user audience.
+  thanks: |
+    “Netzwerk des Tages” (Network of the Day) is funded by BMBF via a grant from
+    <a href="http://www.hochschulwettbewerb2014.de/gewinner/netzwerk-des-tages-onlineplattform.html">Hochschulwettbewerb
+    2014</a>
+  github: NetworkOfDay
+
 - title: KaVE Feedback Generator
   time: 2013-2015
-  tagline: VS feedback collector
   tools: C#, XAML, WPF,  Visual studio, Resharper
   url: https://resharper-plugins.jetbrains.com/packages/KaVE.VsFeedbackGenerator/
   website: http://www.kave.cc/
+  position: Student assistant
   tasks: Responsible for ...
   image: "kave.png"
   description: |
@@ -20,4 +42,7 @@
 
     Once in a while, the feedback generator will ask you to provide the generated feedback. You can review
     it and even delete parts of it, before uploading it to our server.
+  thanks: |
+    The work was partially funded by the German Federal Ministry of Education and Research (BMBF) within
+    the Software Campus project KaVE, grant no. 01IS12054, as well as within EC SPRIDE.
   github: stg-tud/kave
