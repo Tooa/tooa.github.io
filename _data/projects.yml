@@ -2,11 +2,12 @@
 ---
 
 - title: “Netzwerk des Tages” (Network of the Day)
-  time: 2014
+  time: Apr - Nov 2014
   tools: Scala, Java, Coffeescript, JQuery, Play Framework, D3.js, Highcharts, Marionette.js
   url: http://maggie.lt.informatik.tu-darmstadt.de/nod/
   website: http://www.tagesnetzwerk.de
-  position: student assistant
+  facebook: https://www.facebook.com/tagesnetzwerk
+  position: Student assistant
   tasks: Responsible for ...
   image: "nod.png"
   description: |
@@ -24,8 +25,8 @@
   github: NetworkOfDay
 
 - title: KaVE Feedback Generator
-  time: 2013-2015
-  tools: C#, XAML, WPF,  Visual studio, Resharper
+  time: Apr 2013 - Nov 2015
+  tools: C#, XAML, WPF, Visual Studio, Resharper
   url: https://resharper-plugins.jetbrains.com/packages/KaVE.VsFeedbackGenerator/
   website: http://www.kave.cc/
   position: Student assistant
@@ -44,5 +45,6 @@
     it and even delete parts of it, before uploading it to our server.
   thanks: |
     The work was partially funded by the German Federal Ministry of Education and Research (BMBF) within
-    the Software Campus project KaVE, grant no. 01IS12054, as well as within EC SPRIDE.
+    the Software Campus project KaVE, grant no. 01IS12054, as well as within EC SPRIDE. For the Software
+    Campus project »<a href="http://www.datev.de/nuernberg/">Datev Nürnberg</a>« was elected as industry partner.
   github: stg-tud/kave

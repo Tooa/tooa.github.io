@@ -10,7 +10,6 @@ description: Project site
     {% for project in site.data.projects %}
 
         <div class="panel panel-info">
-            <!-- Default panel contents -->
             <div class="panel-heading"><h4 class="panel-title">{{ project.title }}</h4></div>
             <div class="panel-body">
                 {% if project.image %}
@@ -25,7 +24,13 @@ description: Project site
                     {% endif %}
 
                     <dt><span class="fa fa-wrench"></span> Toolstack</dt>
-                    <dd>{{ project.tools }}</dd>
+                    <dd>
+                        {% assign tools = project.tools | split: ', ' %}
+                        {% for tool in tools %}
+                            <span class="label label-warning">{{ tool }}</span>
+                        {% endfor %}
+
+                    </dd>
 
                     <dt><span class="fa fa-group"></span> Position</dt>
                     <dd>{{ project.position }}</dd>
@@ -52,9 +57,15 @@ description: Project site
                         <span class="fa fa-download"></span>
                         <a href="{{ project.url }}">Download</a>
                     </li>
+
+                    {% if project.facebook %}
+                        <li>|</li>
+                        <li>
+                            <span class="fa fa-facebook-square"></span>
+                            <a href="{{ project.facebook }}">FB</a>
+                        </li>
+                    {% endif %}
                 </ul>
-
-
             </div>
         </div>
     {% endfor %}
