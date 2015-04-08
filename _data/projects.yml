@@ -25,7 +25,7 @@
   github: NetworkOfDay
 
 - title: KaVE Feedback Generator
-  time: Apr 2013 - Nov 2015
+  time: Apr 2013 - Nov 2014
   tools: C#, XAML, WPF, Visual Studio, Resharper
   url: https://resharper-plugins.jetbrains.com/packages/KaVE.VsFeedbackGenerator/
   website: http://www.kave.cc/
