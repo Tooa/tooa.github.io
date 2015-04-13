@@ -3,9 +3,15 @@ layout: default
 ---
 
 <div class="blog-overview">
-    <!-- TODO: Add Tag clound -->
 
-    <div class="col-md-12">
-        {{ content }}
+        <div class="well">
+            {% include tag_bar.html %}
+        </div>
+
+    <div class="container">
+        <div class="col-md-12">
+            {{ content }}
+        </div>
+        <p class="pull-right">| <a href="#">Back to top</a> |</p>
     </div>
 </div><!-- /.blog-overview -->

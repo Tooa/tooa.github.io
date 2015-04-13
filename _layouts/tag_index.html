@@ -1,18 +1,15 @@
 ---
 layout: blog-overview
-title: Blog Overview
-blog: active
-description: Blog
-permalink: /blog/
 ---
-<div class="blog">
-{% for post in site.posts %}
-    <div class="row">
-        <div class="col-md-12">
+<div class="row">
+    <h2>{{page.title}}</h2>
+    {% for post in site.posts %}
+        {% for tag in post.tags %}
+            {% if tag == page.tag %}
             <div class="row">
                 <div class="col-md-4">
-                    <a href="{{ post.url }}" >
-                        <img class="listImage img-rounded" border="0" src="/img/posts/{{ post.image }}" alt="{{ post.title }} image">
+                    <a href="{{ post.url }}">
+                        <img border="0" src="/img/posts/{{ post.image }}" alt="{{ post.title }} image" class="listImage img-rounded">
                     </a>
                 </div>
                 <div class="col-md-8">
@@ -22,15 +19,14 @@ permalink: /blog/
                     </p>
                     <p>
                         <i class="fa fa-calendar"></i> {{ post.date | date: "%B %e, %Y" }}
-                        | <i class="fa fa-comments"></i> <a href="{{ site.url }}{{ post.url }}#disqus_thread"></a>
-                        <br/>
+                        | <i class="fa fa-comments"></i> <a href="{{ site.url }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}"></a>
+                        <br />
                         <i class="fa fa-tags"></i> Tags :{% for tag in post.tags %} <a href="/tags/{{ tag }}" rel="tooltip" title="View posts tagged with &quot;{{ tag }}&quot;"><span class="label label-info">{{ tag }}</span></a>  {% if forloop.last != true %} {% endif %} {% endfor %}
                     </p>
                     <p><a href="{{ post.url }}">Read more</a></p>
                 </div>
             </div>
-            <hr>
-        </div>
-    </div>
+            {% endif %}
+        {% endfor %}
     {% endfor %}
 </div>
