@@ -6,14 +6,21 @@ layout: default
     <div class="row">
         <div class="col-md-12">
             <h1>{{ page.title }}</h1>
+            <div class="pull-right">
+                <i class="fa fa-calendar"></i> {{ page.date | date: "%B %e, %Y" }}
+                | <i class="fa fa-comment"></i> <a href="{{ site.url }}{{ page.url }}#disqus_thread"></a>
+                <br />
+                <i class="fa fa-tags"></i> Tags :{% for tag in page.tags %} <a href="/tags/{{ tag }}" rel="tooltip" title="View pages tagged with &quot;{{ tag }}&quot;"><span class="label label-info">{{ tag }}</span></a>  {% if forloop.last != true %} {% endif %} {% endfor %}
+            </div>
         </div>
     </div>
-
+    
     <div class="row">
         <div class="col-md-12">
             {{ content }}
         </div>
     </div>
+
     <div class="pager">
         <a class="prev" href="{{ page.previous.url }}" title="Previous Post: {{page.previous.title}}"><i class="fa fa-arrow-circle-o-left"></i></a>
         <a class="next" href="{{ page.next.url }}" title="Previous Post: {{page.next.title}}"><i class="fa fa-arrow-circle-o-right"></i></a>
@@ -21,16 +28,18 @@ layout: default
 
     <div class="row">
         <div class="col-md-12">
-            <p>
-                <i class="fa fa-calendar"></i> {{ page.date | date: "%B %e, %Y" }}
-                | <i class="fa fa-comment"></i> <a href="{{ site.url }}{{ page.url }}#disqus_thread"></a>
-                <br />
-                <i class="fa fa-tags"></i> Tags :{% for tag in page.tags %} <a href="/tags/{{ tag }}" rel="tooltip" title="View pages tagged with &quot;{{ tag }}&quot;"><span class="label label-info">{{ tag }}</span></a>  {% if forloop.last != true %} {% endif %} {% endfor %}
-                <br/>
-            </p>
+
+            <div class="share-page">
+                Share this on &rarr;
+                <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+                <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+                <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
+            </div>
+            <br/>
+            <p class="pull-right">{% if page.previous.url %} <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; Previous Blog Post</a> 	{% endif %}  |  <a href="#">Back to top</a>  |  {% if page.next.url %} 	<a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">Next Blog Post &raquo; </a> 	{% endif %} </p>
         </div>
     </div>
-    <p class="pull-right">{% if page.previous.url %} <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; Previous Blog Post</a> 	{% endif %}  |  <a href="#">Back to top</a>  |  {% if page.next.url %} 	<a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">Next Blog Post &raquo; </a> 	{% endif %} </p>
+
 
 
     {% if page.comments %}

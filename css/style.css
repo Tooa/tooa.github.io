@@ -102,3 +102,18 @@ dt, dd { margin-top: 10px; }
 .pager a:hover .icon.next { background-position:-100px -70px; }
 .pager .icon-arrow-left { position: fixed; left: 0; }
 .pager .icon-arrow-right { position: fixed; }
+
+.share-page {
+	text-align: center;
+	background: steelblue;
+	color: white;
+	padding: 8px 15px;
+	border-radius: 5px;
+	margin: 1.5px 0px;
+}
+
+.share-page a {
+	font-weight: 700;
+	color: #fff;
+	margin-left: 10px;
+}
