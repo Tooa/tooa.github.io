@@ -1,24 +1,58 @@
 ---
 layout: default
-notes: active
 ---
 
-<div class="notes">
-		<div class="note single">
-			<h1 class="title">{{ page.title }}</h1>
-			
-			<h2 class="date"><info datetime="{{ page.date }}">
-				{{ page.date | date_to_string }} {% if page.author %} by {{ page.author }} {% endif %}
-			</info></h2>
-			<!-- Post content -->
-			<div class="notebody">
-				{{ content }}
-			</div>
-			<!-- Post info -->
-			<div class="noteinfo">
-			<!-- include some categories and tags maybe? -->
-			</div>
+<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>{{ page.title }}</h1>
+        </div>
+    </div>
 
-			<hr>
-		</div><!-- / .note .single -->
-</div><!-- /.notes -->
+    <div class="row">
+        <div class="col-md-12">
+            {{ content }}
+        </div>
+    </div>
+    <div class="pager">
+        <a class="prev" href="{{ page.previous.url }}" title="Previous Post: {{page.previous.title}}"><i class="fa fa-arrow-circle-o-left"></i></a>
+        <a class="next" href="{{ page.next.url }}" title="Previous Post: {{page.next.title}}"><i class="fa fa-arrow-circle-o-right"></i></a>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <p>
+                <i class="fa fa-calendar"></i> {{ page.date | date: "%B %e, %Y" }}
+                | <i class="fa fa-comment"></i> <a href="{{ site.url }}{{ page.url }}#disqus_thread"></a>
+                <br />
+                <i class="fa fa-tags"></i> Tags :{% for tag in page.tags %} <a href="/tags/{{ tag }}" rel="tooltip" title="View pages tagged with &quot;{{ tag }}&quot;"><span class="label label-info">{{ tag }}</span></a>  {% if forloop.last != true %} {% endif %} {% endfor %}
+                <br/>
+            </p>
+        </div>
+    </div>
+    <p class="pull-right">{% if page.previous.url %} <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; Previous Blog Post</a> 	{% endif %}  |  <a href="#">Back to top</a>  |  {% if page.next.url %} 	<a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">Next Blog Post &raquo; </a> 	{% endif %} </p>
+
+
+    {% if page.comments %}
+    <!-- TODO: move to includes include disqus -->
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Comments Section</h2>
+            <p>Feel free to comment on the post but keep it clean and on topic.</p>
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                var disqus_shortname = '{{ site.comments.disqus.short_name }}';
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+    </div>
+    {% endif %}
+</div>

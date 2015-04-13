@@ -20,7 +20,12 @@ img.avatar { margin-bottom: 30px; }
 .container > hr { margin: 30px 0; }
 .container > hr.footer {margin-bottom: 15px; }
 
-.publications, .projects, .events, .lectures, .about, .cv, .error { margin-bottom: 30px; }
+.listImage {
+	width: 12em;
+	height: auto;
+}
+
+.publications, .projects, .blog, .lectures, .about, .cv, .error { margin-bottom: 30px; }
 
 /* Contact */
 iframe {font-family: 'Merriweather', Georgia, Times; font-size: 16px;}
@@ -62,3 +67,38 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 
 dt, dd { margin-top: 10px; }
 
+/* Next/Prev pager */
+.pager a {
+	position:fixed;
+	top:50%;
+	z-index:101;
+	margin-top:-30px;
+	padding:20px 5px;
+	height:100px;
+	width:50px;
+	display:block;
+	text-indent:-9999px;
+	overflow:hidden;
+	transition:background-color .2s;
+	-moz-transition:background-color .2s;
+	-webkit-transition:background-color .2s;
+}
+
+.pager a.prev {
+	left:0%;
+	border-radius:0px 3px 3px 0px;
+}
+
+.pager a.next {
+	right:0%;
+	border-radius:3px 0px 0px 3px;
+}
+
+.pager a { background-color:#444444; }
+.pager a:hover { background-color:#222222; }
+.pager .icon.prev { background-position:-80px -90px; }
+.pager .icon.next { background-position:-100px -90px; }
+.pager a:hover .icon.prev { background-position:-80px -70px; }
+.pager a:hover .icon.next { background-position:-100px -70px; }
+.pager .icon-arrow-left { position: fixed; left: 0; }
+.pager .icon-arrow-right { position: fixed; }
