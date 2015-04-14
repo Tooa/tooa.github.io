@@ -25,6 +25,11 @@ img.avatar { margin-bottom: 30px; }
 	height: auto;
 }
 
+span.site-tag a {
+	display: inline-block;
+	margin-right: 12px;
+}
+
 .publications, .projects, .blog, .lectures, .about, .cv, .error, .page { margin-bottom: 30px; }
 
 /* Contact */

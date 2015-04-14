@@ -6,7 +6,7 @@ title: Vegan Experiment - Living Vegan for 40 Days!
 summary: This is the introduction post for my vegan experiment. It comprises my motivation, initial situation and also shows a couple of products I bought for the first week
 image: vegan.jpg
 tags:
-- Vegan
+- vegan
 ---
 
 #####  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sem quam, elementum a felis mattis, pretium elementum dolor. Integer sed nulla eu ligula pulvinar rhoncus. !

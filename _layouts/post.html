@@ -14,8 +14,8 @@ layout: default
                 </p>
                 <ul class="tags">
                     {% for tag in page.tags %}
-                        <a href="/tags/{{ tag }}" rel="tooltip"
-                       title="View posts tagged with &quot;{{ tag[0] }}&quot;">{{ tag }}</a>
+                        <a href="/tag/{{ tag }}/" rel="tooltip"
+                       title="View posts tagged with &quot;{{ tag }}&quot;">{{ tag }}</a>
                         {% if forloop.last != true %} {% endif %}
                     {% endfor %}
                 </ul>
