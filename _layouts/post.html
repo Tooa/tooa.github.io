@@ -6,11 +6,19 @@ layout: default
     <div class="row">
         <div class="col-md-12">
             <h1>{{ page.title }}</h1>
-            <div class="pull-right">
+
+            <div class="post pull-right">
+                <p>
                 <i class="fa fa-calendar"></i> {{ page.date | date: "%B %e, %Y" }}
                 | <i class="fa fa-comment"></i> <a href="{{ site.url }}{{ page.url }}#disqus_thread"></a>
-                <br />
-                <i class="fa fa-tags"></i> Tags :{% for tag in page.tags %} <a href="/tags/{{ tag }}" rel="tooltip" title="View pages tagged with &quot;{{ tag }}&quot;"><span class="label label-info">{{ tag }}</span></a>  {% if forloop.last != true %} {% endif %} {% endfor %}
+                </p>
+                <ul class="tags">
+                    {% for tag in page.tags %}
+                    <a href="/tags/{{ tag }}" rel="tooltip"
+                       title="View posts tagged with &quot;{{ tag[0] }}&quot;">{{ tag }}</a>
+                    {% if forloop.last != true %} {% endif %}
+                    {% endfor %}
+                </ul>
             </div>
         </div>
     </div>
