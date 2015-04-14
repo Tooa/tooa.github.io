@@ -2,7 +2,7 @@
 layout: blog-overview
 ---
 <div class="row">
-    <h2>{{page.title}}</h2>
+    <h3>{{page.title}}</h3>
     {% for post in site.posts %}
         {% for tag in post.tags %}
             {% if tag == page.tag %}

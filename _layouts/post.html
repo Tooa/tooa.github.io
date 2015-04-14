@@ -14,9 +14,9 @@ layout: default
                 </p>
                 <ul class="tags">
                     {% for tag in page.tags %}
-                    <a href="/tags/{{ tag }}" rel="tooltip"
+                        <a href="/tags/{{ tag }}" rel="tooltip"
                        title="View posts tagged with &quot;{{ tag[0] }}&quot;">{{ tag }}</a>
-                    {% if forloop.last != true %} {% endif %}
+                        {% if forloop.last != true %} {% endif %}
                     {% endfor %}
                 </ul>
             </div>
@@ -36,7 +36,6 @@ layout: default
 
     <div class="row">
         <div class="col-md-12">
-
             <div class="share-page">
                 Share this on &rarr;
                 <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
@@ -49,9 +48,7 @@ layout: default
     </div>
 
 
-
     {% if page.comments %}
-    <!-- TODO: move to includes include disqus -->
     <div class="row">
         <div class="col-md-12">
             <h2>Comments Section</h2>

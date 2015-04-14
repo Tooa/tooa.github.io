@@ -25,7 +25,7 @@ img.avatar { margin-bottom: 30px; }
 	height: auto;
 }
 
-.publications, .projects, .blog, .lectures, .about, .cv, .error { margin-bottom: 30px; }
+.publications, .projects, .blog, .lectures, .about, .cv, .error, .page { margin-bottom: 30px; }
 
 /* Contact */
 iframe {font-family: 'Merriweather', Georgia, Times; font-size: 16px;}
