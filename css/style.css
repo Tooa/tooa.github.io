@@ -10,7 +10,15 @@ body {
 html, button, input, select, textarea, .toggle h4 { font-family: 'Lora', Georgia, serif; }
 h1, h2, h3, h4, h5, h6, .main-navigation ul li, dt { font-family:"Coustard", Georgia, serif; }
 
-img.avatar { margin-bottom: 30px; }
+
+.dropcap:first-letter { float: left; color: #3276b1; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: Georgia; }
+
+h4.about-quote {
+	font-style: italic;
+	position: relative;
+	letter-spacing: 1px;
+	left: 4px;
+}
 
 .listImage {
 	width: 12em;
