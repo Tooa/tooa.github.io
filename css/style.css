@@ -29,15 +29,7 @@ span.site-tag a {
 	}
 }
 
-.github-icon-svg, .twitter-icon-svg {
-	display: inline-block;
-	width: 16px;
-	height: 16px;
-	position: relative;
-	top: 3px;
-}
-
-.icon-grey {
+.grey {
     color: #C2C2C2
 }
 
@@ -213,7 +205,7 @@ hr.style-two {
 }
 .site-footer > .row { border-top: 1px solid #eee; }
 .site-footer .site-info { padding-top:1em; text-align:center; font-size:.9em; }
-.site-footer .site-info, .site-footer .site-info a { color:#666; }
+.site-footer .site-info a { color:#666; }
 
 /* -------------------------------------------- */
 /* TYPOGRAPHY */
