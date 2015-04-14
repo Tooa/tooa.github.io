@@ -1,24 +1,23 @@
-@import url(http://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic);
-@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*@import url(http://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);*/
 
-body { padding-top: 20px; padding-bottom: 40px; font-family: 'Merriweather', Georgia, Times; font-size: 16px; }
+body {
+	padding-top: 20px;
+	padding-bottom: 40px;
+	/*font-family: 'Merriweather', Georgia, Times;*/
+	font-size: 16px; }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: 'Merriweather', Georgia, Times; font-weight: 700;}
+/* FONTS */
+html, button, input, select, textarea, .toggle h4 { font-family: 'Lora', Georgia, serif; }
+h1, h2, h3, h4, h5, h6, .main-navigation ul li, dt { font-family:"Coustard", Georgia, serif; }
+h1.site-title, h1.site-title a { font-family:"UnifrakturMaguntia", Georgia, serif; }
 
-blockquote p { font-size: 16px; line-height: 1.6em; }
+/*h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: 'Merriweather', Georgia, Times; font-weight: 700;}*/
 
 /* Masthead */
-.header, .footer, .header h3 { font-family: 'Montserrat', Helvetica, sans-serif; text-transform: uppercase; font-weight: normal; }
-
-/* Navigation */
-h3.text-muted a {text-decoration: none; color: #999999; }
-h3.text-muted a:hover { text-decoration: none; color: #0088cc; }
+/*.header, .site-footer, .header h3 { font-family: 'Montserrat', Helvetica, sans-serif; text-transform: uppercase; font-weight: normal; }*/
 
 img.avatar { margin-bottom: 30px; }
-
-/* Custom container */
-.container > hr { margin: 30px 0; }
-.container > hr.footer {margin-bottom: 15px; }
 
 .listImage {
 	width: 12em;
@@ -30,27 +29,21 @@ span.site-tag a {
 	margin-right: 12px;
 }
 
+/* Space out content a bit */
+body {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+	.container {
+		max-width: 750px;
+	}
+}
+
+
 .publications, .projects, .blog, .lectures, .about, .cv, .error, .page { margin-bottom: 30px; }
-
-/* Contact */
-iframe {font-family: 'Merriweather', Georgia, Times; font-size: 16px;}
-
-/* Code */
-pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
-
-.step { border-radius: 50%;
-	-moz-border-radius: 50%;
-	-webkit-border-radius: 50%;
-	width: 35px;
-	height: 35px;
-	background: #4679BD;
-	color: #FFF;
-	float: left;
-	text-align: center;
-	font-size: 24px;
-	padding-top: 5.5px;
-	margin: 5px 15px 0px 0px;
-	font-family: 'Montserrat', Helvetica, sans-serif; }
 
 
 .github-icon-svg, .twitter-icon-svg {
@@ -207,3 +200,45 @@ hr.style-two {
 	background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
 	background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
 }
+
+/* NAVIGATION */
+.nav-pills { border-style:solid; border-width:1px 0; border-color: #eee; }
+
+.nav-pills > .active > a:hover,.nav-pills > li > a:hover {
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 0px;
+	border-bottom: 4px solid;
+}
+
+.nav-pills > li > a{
+	border-radius:0px;
+}
+
+.wrapper { width:100%; }
+.wrapper > .row { width:80%; margin-left:auto; margin-right:auto; }
+
+/* HEADER */
+.site-header { padding-top:1.250em; padding-bottom: 3em; text-align:center; }
+
+
+/* FOOTER */
+.site-footer {
+	padding-top: 60px;
+	position:absolute;
+	height:60px;   /* Height of the footer */
+}
+.site-footer > .row { border-top: 1px solid #eee; }
+.site-footer .site-info { padding-top:1em; text-align:center; font-size:.9em; }
+.site-footer .site-info, .site-footer .site-info a { color:#666; }
+
+/* -------------------------------------------- */
+/* TYPOGRAPHY */
+/* headings and paragraphs */
+h1 { font-size: 2.20em; margin: 0.8em 0 0.4em 0; }
+h2 { font-size: 1.60em; margin: 1.4em 0 0.8em 0; }
+h3 { font-size: 1.20em; margin: 1.0em 0 .6em 0; }
+h4 { font-size: 0.90em; margin: 1.0em 0 .6em 0; }
+h5 { font-size: 0.90em; margin: 1.0em 0 .8em 0; }
+h6 { font-size: 0.85em; margin: 1.0em 0 .8em 0; }
+p { margin: 1.2em 0; }
