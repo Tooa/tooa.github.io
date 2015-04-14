@@ -1,21 +1,14 @@
-/*@import url(http://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic);
-@import url(http://fonts.googleapis.com/css?family=Montserrat);*/
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Coustard);
 
 body {
-	padding-top: 20px;
-	padding-bottom: 40px;
-	/*font-family: 'Merriweather', Georgia, Times;*/
-	font-size: 16px; }
+	font-family: 'Lora', Georgia, serif;
+	font-size: 16px;
+}
 
 /* FONTS */
 html, button, input, select, textarea, .toggle h4 { font-family: 'Lora', Georgia, serif; }
 h1, h2, h3, h4, h5, h6, .main-navigation ul li, dt { font-family:"Coustard", Georgia, serif; }
-h1.site-title, h1.site-title a { font-family:"UnifrakturMaguntia", Georgia, serif; }
-
-/*h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: 'Merriweather', Georgia, Times; font-weight: 700;}*/
-
-/* Masthead */
-/*.header, .site-footer, .header h3 { font-family: 'Montserrat', Helvetica, sans-serif; text-transform: uppercase; font-weight: normal; }*/
 
 img.avatar { margin-bottom: 30px; }
 
@@ -29,22 +22,12 @@ span.site-tag a {
 	margin-right: 12px;
 }
 
-/* Space out content a bit */
-body {
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
 /* Customize container */
 @media (min-width: 768px) {
 	.container {
 		max-width: 750px;
 	}
 }
-
-
-.publications, .projects, .blog, .lectures, .about, .cv, .error, .page { margin-bottom: 30px; }
-
 
 .github-icon-svg, .twitter-icon-svg {
 	display: inline-block;
