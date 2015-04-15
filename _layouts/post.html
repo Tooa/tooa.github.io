@@ -34,6 +34,19 @@ layout: default
         <a class="next" href="{{ page.next.url }}" title="Previous Post: {{page.next.title}}"><i class="fa fa-arrow-circle-o-right"></i></a>
     </div>
 
+    <div class="col-md-12">
+        <h2>Read More Recent Posts </h2>
+        <ul class="list-unstyled icon-list mark">
+            {% for post in site.posts limit:3 %}
+                {% if post.title != page.title %}
+                         <li>
+                            <a href="{{post.url}}">{{ post.title }}</a>
+                        </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+    <br/>
     <div class="row">
         <div class="col-md-12">
             <div class="share-page">
