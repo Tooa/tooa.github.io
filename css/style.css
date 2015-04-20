@@ -199,12 +199,11 @@ hr.style-two {
 /* FOOTER */
 .site-footer {
 	padding-top: 60px;
-	position:absolute;
 	height:60px;   /* Height of the footer */
 }
+
 .site-footer > .row { border-top: 1px solid #eee; }
-.site-footer .site-info { padding-top:1em; text-align:center; font-size:.9em; }
-.site-footer .site-info a { color:#666; }
+
 
 /* -------------------------------------------- */
 /* TYPOGRAPHY */
