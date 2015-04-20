@@ -3,15 +3,14 @@ layout: default
 ---
 
 <div class="row">
-    <h2>Tag Cloud</h2>
-    {% include tag-cloud.html %}
+	<div class="col-md-12">
+		<h2>Tag Cloud</h2>
+    	{% include tag-cloud.html %}
     
-	<hr class="style-two">
-
-    <div class="col-md-12">
+		<hr class="style-two">
+    
         {{ content }}
 
 		<p class="pull-right">| <a href="#">Back to top</a> |</p>
-    </div>
-    
+	</div>  
 </div><!-- /.blog-overview -->
