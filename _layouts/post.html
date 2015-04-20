@@ -7,7 +7,7 @@ layout: default
         <div class="col-md-12">
             <h1>{{ page.title }}</h1>
 
-            <div class="post pull-right">
+            <div class="post pull-right hidden-xs">
                 <p>
                 <i class="fa fa-calendar"></i> {{ page.date | date: "%B %e, %Y" }}
                 | <i class="fa fa-comment"></i> <a href="{{ site.url }}{{ page.url }}#disqus_thread"></a>
@@ -29,7 +29,7 @@ layout: default
         </div>
     </div>
 
-    <div class="pager">
+    <div class="pager hidden-sm hidden-xs">
         <a class="icon-block prev" href="{{ page.previous.url }}" title="Previous Post: {{page.previous.title}}"><i class="fa fa-arrow-circle-o-left"></i></a>
         <a class="next" href="{{ page.next.url }}" title="Previous Post: {{page.next.title}}"><i class="fa fa-arrow-circle-o-right"></i></a>
     </div>
@@ -70,4 +70,4 @@ layout: default
         </div>
     </div>
     {% endif %}
-</div>
+</div>  

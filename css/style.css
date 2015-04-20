@@ -41,10 +41,14 @@ span.site-tag a {
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 600px) {
     .avatar {
         width: 100px;
         height: 100px;
+    }
+
+    .listImage {
+        width: 100px;
     }
 }
 
