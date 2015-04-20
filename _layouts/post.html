@@ -1,48 +1,46 @@
 ---
 layout: default
 ---
-
 <div class="content">
     <div class="row">
         <div class="col-md-12">
             <h1>{{ page.title }}</h1>
-
-            <div class="post pull-right hidden-xs">
-                <p>
-                <i class="fa fa-calendar"></i> {{ page.date | date: "%B %e, %Y" }}
-                | <i class="fa fa-comment"></i> <a href="{{ site.url }}{{ page.url }}#disqus_thread"></a>
-                </p>
-                <ul class="tags">
-                    {% for tag in page.tags %}
-                        <a href="/tag/{{ tag }}/" rel="tooltip"
-                       title="View posts tagged with &quot;{{ tag }}&quot;">{{ tag }}</a>
-                        {% if forloop.last != true %} {% endif %}
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-12">
             {{ content }}
         </div>
-    </div>
 
-    <div class="col-md-12">
-        <h2>Read More Recent Posts </h2>
-        <ul class="list-unstyled icon-list square-mark">
-            {% for post in site.posts limit:3 %}
-                {% if post.title != page.title %}
-                         <li>
-                            <a href="{{post.url}}">{{ post.title }}</a>
-                        </li>
-                {% endif %}
-            {% endfor %}
-        </ul>
-    </div>
-    <br/>
-    <div class="row">
+        <div class="col-md-12">
+            <h2>About the Author</h2>
+            <div class="media">
+                <a class="pull-left" href="#">
+                    <img class="media-object dp img-circle" src="/img/me_thumbnail.jpg" style="width: 100px;height:100px;">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">Uli Fahrer <small> Germany</small></h4>
+                    <h5>CS Student <a href="http://www.tu-darmstadt.de">TU Darmstadt</a></h5>
+                    <hr style="margin:8px auto">
+
+                    <span class="label label-default">Software Development</span>
+                    <span class="label label-default">NLP</span>
+                    <span class="label label-info">Machine Learning</span>
+                    <span class="label label-default">Ebass</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-12">
+            <h2>Read More Recent Posts</h2>
+            <ul class="list-unstyled icon-list square-mark">
+                {% for post in site.posts limit:3 %}
+                    {% if post.title != page.title %}
+                    <li>
+                        <a href="{{post.url}}">{{ post.title }}</a>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+
         <div class="col-md-12">
             <div class="share-page">
                 Share this on &rarr;
@@ -53,16 +51,13 @@ layout: default
             <br/>
             <p class="pull-right">{% if page.previous.url %} <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; Previous Blog Post</a> 	{% endif %}  |  <a href="#">Back to top</a>  |  {% if page.next.url %} 	<a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">Next Blog Post &raquo; </a> 	{% endif %} </p>
         </div>
-    </div>
 
-
-    {% if page.comments %}
-    <div class="row">
-        <div class="col-md-12">
-            <h2>Comments Section</h2>
-            <p>Feel free to comment on the post but keep it clean and on topic.</p>
-            {% include disqus.html %}
-        </div>
+        {% if page.comments %}
+            <div class="col-md-12">
+                <h2>Comments Section</h2>
+                <p>Feel free to comment on the post but keep it clean and on topic.</p>
+                {% include disqus.html %}
+            </div>
+        {% endif %}
     </div>
-    {% endif %}
 </div>
