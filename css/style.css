@@ -238,3 +238,34 @@ p { margin: 1.2em 0; }
     -ms-transform:rotate(360deg);
     -webkit-transform:rotate(360deg);
 }
+
+.carousel {
+    position: relative;
+}
+
+/* Pseudo Play/Pause Toggle Button */
+.btn.active {
+    display: none;
+}
+
+.btn span:nth-of-type(1)  {
+    display: none;
+}
+.btn span:last-child  {
+    display: block;
+}
+
+.btn.active  span:nth-of-type(1)  {
+    display: block;
+}
+.btn.active span:last-child  {
+    display: none;
+}
+
+.media-control {
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 15px 20px;
+    padding: 8px 15px;
+    margin: 1.5px 0px;
+}

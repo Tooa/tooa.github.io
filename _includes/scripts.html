@@ -1,3 +1,23 @@
 <!-- javascript at the end of the doc so page loads faster -->
 <script src="/js/jquery.js"></script>
 <script src="/js/bootstrap.min.js"></script>
+
+<script>
+    $(window).bind("load resize slid.bs.carousel", function() {
+        var imageHeight = $(".active .holder").height();
+        $(".controllers").height( imageHeight );
+    });
+
+    $(function () {
+        $('#carousel-project').carousel({
+            interval: 70000,
+            pause: "false"
+        });
+        $('#playButton').change(function () {
+            $('#carousel-project').carousel('cycle');
+        });
+        $('#pauseButton').change(function () {
+            $('#carousel-project').carousel('pause');
+        });
+    });
+</script>
