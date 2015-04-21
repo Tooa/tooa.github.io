@@ -6,77 +6,76 @@ description: Project site
 permalink: /projects/
 ---
 <div class="projects">
-    <!--TODO: Add index for projects click on and scroll-->
+    <div class="row">
 
-    <div class="row media-control">
-        <div class="col-md-4 col-xs-4 text-center">
-            <button href="#carousel-project" data-slide="prev" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-arrow-left"></i> Prev</button>
-        </div>
-
-        <div class="col-md-4 col-xs-4 text-center">
-            <div class="" data-toggle="buttons">
-                <label class="btn btn-success active">
-                    <input type="radio" name="options" id="playButton" autocomplete="off" checked>
-                    <i class="glyphicon glyphicon-play"></i> Play &nbsp;&nbsp;
-                </label>
-                <label class="btn btn-danger">
-                    <input type="radio" name="options" id="pauseButton" autocomplete="off">
-                    <i class="glyphicon glyphicon-pause"></i> Pause
-                </label>
+        <div class="row media-control">
+            <div class="col-md-4 col-xs-4 text-center">
+                <button href="#carousel-project" data-slide="prev" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-arrow-left"></i> Prev</button>
             </div>
-        </div>
 
-        <div class="col-md-4 col-xs-4 text-center">
-            <button href="#carousel-project" data-slide="next" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-arrow-right"></i>  Next </button>
-        </div>
-    </div>
-
-    <div id="carousel-project" class="carousel slide" data-ride="carousel">
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-
-            {% for project in site.data.projects %}
-
-                <div {% if project.active %} class="item active" {% else %} class="item" {% endif %}>
-                    <div class="col-md-12"><h2>{{ project.title }}</h2></div>
-                    <div class="holder col-md-12">
-                        <img class="img-responsive" src="../img/{{ project.image }}" alt="...">
-                    </div>
-                    <div class="col-md-12">
-                        <dt><span class="fa fa-wrench"></span> Toolstack</dt>
-                        <dd>
-                            {% assign tools = project.tools | split: ', ' %}
-                            {% for tool in tools %}
-                            <span class="label label-warning">{{ tool }}</span>
-                            {% endfor %}
-
-                        </dd>
-                        <p>{{ project.description | markdownify }}</p>
-                        <button type="button" class="btn btn-primary">View more</button>
-                    </div>
+            <div class="col-md-4 col-xs-4 text-center">
+                <div class="" data-toggle="buttons">
+                    <label class="btn btn-success active">
+                        <input type="radio" name="options" id="playButton" autocomplete="off" checked>
+                        <i class="glyphicon glyphicon-play"></i> Play &nbsp;&nbsp;
+                    </label>
+                    <label class="btn btn-danger">
+                        <input type="radio" name="options" id="pauseButton" autocomplete="off">
+                        <i class="glyphicon glyphicon-pause"></i> Pause
+                    </label>
                 </div>
+            </div>
 
-            {% endfor %}
+            <div class="col-md-4 col-xs-4 text-center">
+                <button href="#carousel-project" data-slide="next" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-arrow-right"></i>  Next </button>
             </div>
         </div>
-        <div class="controllers col-md-12 col-xs-12">
-            <!-- Controls -->
-            <!--<a class="left carousel-control" href="#carousel-project" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control" href="#carousel-project" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>-->
-            <!-- Indicators -->
-            <!--<ol class="carousel-indicators">
-                {% assign counter = 0 %}
-                {% for project in site.data.projects %}
-                    <li data-target="#carousel-project" data-slide-to="{{ counter }}" {% if project.active %} class="active" {% endif %}></li>
-                    {% assign counter = counter | plus: 1 %}
-                {% endfor %}
-            </ol>-->
 
-        </div>
+        <div id="carousel-project" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+
+                {% for project in site.data.projects %}
+
+                    <div {% if project.active %} class="item active" {% else %} class="item" {% endif %}>
+                        <div class="col-md-12"><h2>{{ project.title }}</h2></div>
+                        <div class="holder col-md-12">
+                            <img class="img-responsive" src="../img/{{ project.image }}" alt="...">
+                        </div>
+                        <div class="col-md-12">
+                            <dt><span class="fa fa-wrench"></span> Toolstack</dt>
+                            <dd>
+                                {% assign tools = project.tools | split: ', ' %}
+                                {% for tool in tools %}
+                                <span class="label label-warning">{{ tool }}</span>
+                                {% endfor %}
+
+                            </dd>
+                            <p>{{ project.description | markdownify }}</p>
+                            <button type="button" class="btn btn-primary">View more</button>
+                        </div>
+                    </div>
+
+                {% endfor %}
+                </div>
+            </div>
+            <div class="controllers col-md-12 col-xs-12">
+                <!-- Controls -->
+                <!--<a class="left carousel-control" href="#carousel-project" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-project" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>-->
+                <!-- Indicators -->
+                <!--<ol class="carousel-indicators">
+                    {% assign counter = 0 %}
+                    {% for project in site.data.projects %}
+                        <li data-target="#carousel-project" data-slide-to="{{ counter }}" {% if project.active %} class="active" {% endif %}></li>
+                        {% assign counter = counter | plus: 1 %}
+                    {% endfor %}
+                </ol>-->
+            </div>
 
 
 
@@ -142,5 +141,5 @@ permalink: /projects/
             </div>
         </div>
     {% endfor %} -->
-
+    </div>
 </div> <!-- .projects -->
