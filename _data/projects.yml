@@ -38,12 +38,6 @@
     One part of the project is to learn about the average developer. To do so, we invite developer to generate (and provide)
     feedback that reflects their interactions with the development environment.
 
-    This includes general actions such as the completion of code, the refactoring of bad code or the navigation
-    through any Visual Studio menu. The feedback generation does not disturb the programming flow, data is collected in
-    the background and stored on your local hard disk.
-
-    Once in a while, the feedback generator will ask you to provide the generated feedback. You can review
-    it and even delete parts of it, before uploading it to our server.
   thanks: |
     The work was partially funded by the German Federal Ministry of Education and Research (BMBF) within
     the Software Campus project KaVE, grant no. 01IS12054, as well as within EC SPRIDE. For the Software

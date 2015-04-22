@@ -42,17 +42,18 @@ span.site-tag a {
 }
 
 @media screen and (max-width: 600px) {
-    .avatar {
-        width: 100px;
-        height: 100px;
-    }
+	.avatar {
+		width: 100px;
+		height: 100px;
+	}
 
-    .listImage {
-        width: 100px;
-    }
+	.listImage {
+		width: 100px;
+	}
 }
 
-dt, dd { margin-top: 10px; }
+dt { margin-top: 30px; margin-bottom: 0px;}
+dd { margin-top: 10px;}
 
 .share-page {
 	text-align: center;
