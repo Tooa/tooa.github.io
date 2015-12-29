@@ -155,19 +155,9 @@ hr.style-two {
 /* NAVIGATION */
 .nav-pills { border-style:solid; border-width:1px 0; border-color: #eee; }
 
-.nav-pills > .active > a:hover,.nav-pills > li > a:hover {
-	text-decoration: none;
-	font-weight: bold;
-	border-radius: 0px;
-	border-bottom: 4px solid;
-}
-
-.nav-pills > li > a{
+.nav-pills > li > a {
 	border-radius:0px;
 }
-
-.wrapper { width:100%; }
-.wrapper > .row { width:80%; margin-left:auto; margin-right:auto; }
 
 /* HEADER */
 .site-header { padding-top:1.250em; padding-bottom: 3em; text-align:center; }
@@ -221,19 +211,16 @@ p { margin: 1.2em 0; }
 	content: '\e074';
 }
 
-.media
-{
+.media {
     /*box-shadow:0px 0px 4px -2px #000;*/
     margin: 20px 0;
     padding:30px;
 }
-.dp
-{
+.dp {
     border:10px solid #eee;
     transition: all 0.2s ease-in-out;
 }
-.dp:hover
-{
+.dp:hover {
     border:2px solid #eee;
     transform:rotate(360deg);
     -ms-transform:rotate(360deg);
