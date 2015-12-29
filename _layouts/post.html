@@ -3,12 +3,18 @@ layout: default
 ---
 <div class="content">
     <div class="row">
+        <div class="post-top-meta">
+            <div class="post-date">{{ page.date | date: "%B %d, %Y" }}</div>
+            <h1 class="post-title">{{ page.title }}</h1>
+        </div>
+
+        <div class="hrline"></div>
+
         <div class="col-md-12">
-            <h1>{{ page.title }}</h1>
             {{ content }}
         </div>
 
-        <div class="col-md-12">
+        <div class="col-md-12 blog-section">
             <h2>About the Author</h2>
             <div class="media">
                 <a class="pull-left" href="#">
@@ -25,7 +31,7 @@ layout: default
         </div>
 
 
-        <div class="col-md-12">
+        <div class="col-md-12 blog-section">
             <div class="share-page">
                 Share this on &rarr;
                 <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
@@ -34,11 +40,11 @@ layout: default
             </div>            
         </div>
 
-    <div class="col-md-12 col-xs-12">
-        <p class="pull-right">{% if page.previous.url %} <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; Previous Blog Post</a>  {% endif %}  |  <a href="#">Back to top</a>  |  {% if page.next.url %}  <a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">Next Blog Post &raquo; </a>  {% endif %} </p>
-    </div>
+        <div class="col-md-12 col-xs-12 blog-section">
+            <p class="pull-right">{% if page.previous.url %} <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; Previous Blog Post</a>  {% endif %}  |  <a href="#">Back to top</a>  |  {% if page.next.url %}  <a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">Next Blog Post &raquo; </a>  {% endif %} </p>
+        </div>
 
-        <div class="col-md-12 col-xs-12">
+        <div class="col-md-12 col-xs-12 blog-section">
             <h2>Read More Recent Posts</h2>
             <ul class="list-unstyled square-mark">
                 {% for post in site.posts limit:3 %}
@@ -52,7 +58,7 @@ layout: default
         </div>
 
         {% if page.comments %}
-            <div class="col-md-12">
+            <div class="col-md-12 blog-section">
                 <h2>Comments Section</h2>
                 <p>Feel free to comment on the post. But keep it clean and on topic.</p>
                 {% include disqus.html %}

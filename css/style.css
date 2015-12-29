@@ -109,6 +109,22 @@ dd { margin-top: 10px;}
    2. Blog
    ========================================================================== */
 
+.post-title,
+.post-date { text-align: center }
+.post-date {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.hrline {
+    background: #ddd;
+    background: -webkit-gradient(linear,left top,right top,from(rgba(255,255,255,0)),color-stop(#ccc),to(rgba(255,255,255,0)));
+    background: -webkit-linear-gradient(left,rgba(255,255,255,0),#ccc,rgba(255,255,255,0));
+    background: linear-gradient(to right,rgba(255,255,255,0),#ccc,rgba(255,255,255,0));
+    height: 1px;
+    margin: 2.5em 0;
+}
+
 .share-page {
 	text-align: center;
 	background: steelblue;
@@ -124,9 +140,12 @@ dd { margin-top: 10px;}
 	margin-left: 10px;
 }
 
+.blog-section {
+	padding-top: 20px;
+}
+
 .box {
     position:relative;
-    height: 8.5em;
     border-radius: 3px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     padding: 15px 20px;
