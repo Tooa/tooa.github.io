@@ -1,17 +1,53 @@
-@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
-@import url(http://fonts.googleapis.com/css?family=Coustard);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400);
 
-body {
-	font-family: 'Lora', Georgia, serif;
-	font-size: 16px;
+/* ==========================================================================
+   1. General - Setting up some base styles
+   ========================================================================== */
+
+html {
+    height: 100%;
+    max-height: 100%;
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-/* FONTS */
-html, button, input, select, textarea, .toggle h4 { font-family: 'Lora', Georgia, serif; }
-h1, h2, h3, h4, h5, h6, .main-navigation ul li, dt { font-family:"Coustard", Georgia, serif; }
+body {
+	height: 100%;
+    max-height: 100%;
+    font-family: "Merriweather", serif;
+    letter-spacing: 0.01rem;
+    font-size: 1.8rem;
+    line-height: 1.75em;
+    color: #3A4145;
+    -webkit-font-feature-settings: 'kern' 1;
+    -moz-font-feature-settings: 'kern' 1;
+    -o-font-feature-settings: 'kern' 1;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+    -moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+    -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+    color: #2E2E2E;
+    line-height: 1.15em;
+    margin: 0 0 0.4em 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+p { margin: 0.7em 0; }
 
 
-.dropcap:first-letter { float: left; color: #3276b1; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: Georgia; }
+.dropcap:first-letter { 
+	float: left; 
+	color: #3276b1; 
+	font-size: 75px; 
+	line-height: 50px; 
+	padding-top: 4px; 
+	padding-right: 8px; 
+	padding-left: 3px; 
+	font-family: Georgia; 
+}
 
 h4.about-quote {
 	font-style: italic;
@@ -40,10 +76,6 @@ span.site-tag a {
 	.avatar {
 		width: 100px;
 		height: 100px;
-	}
-
-	.listImage {
-		width: 100px;
 	}
 }
 
@@ -103,7 +135,8 @@ dd { margin-top: 10px;}
 	-webkit-border-top-right-radius:4px;
 	border-top-right-radius:4px;
 }
-.tags a:before{
+
+.tags a:before {
 	content:"";
 	float:left;
 	position:absolute;
@@ -115,7 +148,8 @@ dd { margin-top: 10px;}
 	border-style:solid;
 	border-width:12px 12px 12px 0;
 }
-.tags a:after{
+
+.tags a:after {
 	content:"";
 	position:absolute;
 	top:10px;
@@ -132,12 +166,20 @@ dd { margin-top: 10px;}
 	box-shadow:-1px -1px 2px #004977;
 }
 
-.tags a:hover{background:#555;}
-.tags a:hover:before{border-color:transparent #555 transparent transparent;}
+.tags a:hover {
+	background:#555;
+}
 
+.tags a:hover:before {
+	border-color: transparent #555 transparent transparent;
+}
 
 /* NAVIGATION */
-.nav-pills { border-style:solid; border-width:1px 0; border-color: #eee; }
+.nav-pills { 
+	border-style: solid; 
+	border-width: 1px 0; 
+	border-color: #eee; 
+}
 
 .nav-pills > li > a {
 	border-radius:0px;
@@ -156,17 +198,6 @@ dd { margin-top: 10px;}
 .site-footer > .row { border-top: 1px solid #eee; }
 
 
-/* -------------------------------------------- */
-/* TYPOGRAPHY */
-/* headings and paragraphs */
-h1 { font-size: 2.20em; margin: 0.8em 0 0.4em 0; }
-h2 { font-size: 1.60em; margin: 1.4em 0 0.8em 0; }
-h3 { font-size: 1.20em; margin: 1.0em 0 .6em 0; }
-h4 { font-size: 0.90em; margin: 1.0em 0 .6em 0; }
-h5 { font-size: 0.90em; margin: 1.0em 0 .8em 0; }
-h6 { font-size: 0.85em; margin: 1.0em 0 .8em 0; }
-p { margin: 1.2em 0; }
-
 .social-icons {
 	height: 50px;
     margin-bottom: 10px;
@@ -183,6 +214,7 @@ p { margin: 1.2em 0; }
 	display: block;
 	position: relative;
 }
+
 .icon-list li:before {
 	font-family: 'Glyphicons Halflings';
 	position: absolute;
@@ -199,12 +231,6 @@ p { margin: 1.2em 0; }
     /*box-shadow:0px 0px 4px -2px #000;*/
     margin: 20px 0;
     padding:30px;
-}
-
-
-.listImage {
-	width: 12em;
-	height: auto;
 }
 
 .dp {
