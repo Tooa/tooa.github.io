@@ -81,6 +81,34 @@ span.site-tag a {
 dt { margin-top: 30px; margin-bottom: 0px;}
 dd { margin-top: 10px;}
 
+/* NAVIGATION */
+.nav-pills { 
+	border-style: solid; 
+	border-width: 1px 0; 
+	border-color: #eee; 
+}
+
+.nav-pills > li > a {
+	border-radius:0px;
+}
+
+/* HEADER */
+.site-header { padding-top:1.250em; padding-bottom: 3em; text-align:center; }
+
+
+/* FOOTER */
+.site-footer {
+	padding-top: 60px;
+	height:60px;   /* Height of the footer */
+}
+
+.site-footer > .row { border-top: 1px solid #eee; }
+
+
+/* ==========================================================================
+   2. Blog
+   ========================================================================== */
+
 .share-page {
 	text-align: center;
 	background: steelblue;
@@ -173,30 +201,6 @@ dd { margin-top: 10px;}
 	border-color: transparent #555 transparent transparent;
 }
 
-/* NAVIGATION */
-.nav-pills { 
-	border-style: solid; 
-	border-width: 1px 0; 
-	border-color: #eee; 
-}
-
-.nav-pills > li > a {
-	border-radius:0px;
-}
-
-/* HEADER */
-.site-header { padding-top:1.250em; padding-bottom: 3em; text-align:center; }
-
-
-/* FOOTER */
-.site-footer {
-	padding-top: 60px;
-	height:60px;   /* Height of the footer */
-}
-
-.site-footer > .row { border-top: 1px solid #eee; }
-
-
 .social-icons {
 	height: 50px;
     margin-bottom: 10px;
@@ -208,22 +212,11 @@ dd { margin-top: 10px;}
 	font-size: 26px;
 }
 
-.icon-list li {
-	padding: 0 0 5px 20px;
-	display: block;
-	position: relative;
-}
-
-.icon-list li:before {
-	font-family: 'Glyphicons Halflings';
-	position: absolute;
-	left: 0px;
-	top:1px;
-	font-size:80%
-}
-
-.square-mark li:before {
-	content: '\e074';
+.square-mark li:before {    
+	font-family: 'FontAwesome';
+	content: '\f069';
+	padding-left: 25px;
+	color: black;
 }
 
 .media {
