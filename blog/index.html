@@ -6,20 +6,20 @@ description: Blog
 permalink: /blog/
 ---
 <div class="blog">
-
-{% for post in site.posts %}
-    <div class="row">
-        <div class="col-md-12">
-            <h3><strong><a href="{{ post.url }}">{{ post.title }}</a></strong></h3>
+    {% for post in site.posts %}
+        <!-- TODO: resolve code duplication: see tag-page.html -->
+        <div class="row">
+            <div class="col-md-12 hidden-xs hidden-sm">
+                <h3><strong><a href="{{ post.url }}">{{ post.title }}</a></strong></h3>
                 <div class="box">
                     <p>
                         {{ post.summary }}
                     </p>
                     <ul class="tags">
                         {% for tag in post.tags %}
-                            <a href="/tag/{{ tag }}/" rel="tooltip"
-                                 title="View posts tagged with &quot;{{ tag }}&quot;">{{ tag }}</a>
-                            {% if forloop.last != true %} {% endif %}
+                        <a href="/tag/{{ tag }}/" rel="tooltip"
+                           title="View posts tagged with &quot;{{ tag }}&quot;">{{ tag }}</a>
+                        {% if forloop.last != true %} {% endif %}
                         {% endfor %}
                     </ul>
                 </div>
@@ -30,26 +30,16 @@ permalink: /blog/
                     <div class="col-md-6">
                         <p></p>
                         <p class="pull-right"><i class="fa fa-calendar"></i> {{ post.date | date: "%B %e, %Y" }}
-                        | <i class="fa fa-comments"></i> <a href="{{ site.url }}{{ post.url }}#disqus_thread"></a></p>
+                            | <i class="fa fa-comments"></i> <a href="{{ site.url }}{{ post.url }}#disqus_thread"></a></p>
                     </div>
                 </div>
-           <!-- </div>-->
-
-            <div class="col-xs-8 hidden-md hidden-lg hidden-print">
-                <p>
-                    <i class="fa fa-calendar"></i> {{ post.date | date: "%B %e, %Y" }}
-                    | <i class="fa fa-comments"></i> <a href="{{ site.url }}{{ post.url }}#disqus_thread"></a>
-                </p>
-                <ul class="tags">
-                    {% for tag in post.tags %}
-                        <a href="/tag/{{ tag }}/" rel="tooltip"
-                            title="View posts tagged with &quot;{{ tag }}&quot;">{{ tag }}</a>
-                        {% if forloop.last != true %} {% endif %}
-                    {% endfor %}
-                </ul>
             </div>
-            <hr class="style-two">
+
+
+            <div class="col-xs-12 hidden-md hidden-lg hidden-print">
+                <h3><strong><a href="{{ post.url }}">{{ post.title }}</a></strong></h3>
+            </div>
         </div>
-    </div>
+        <hr class="style-two">
     {% endfor %}
 </div>

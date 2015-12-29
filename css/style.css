@@ -56,26 +56,25 @@ h4.about-quote {
 	left: 4px;
 }
 
-.avatar {
-    margin-top: 25px;
-}
-
 span.site-tag a {
 	display: inline-block;
 	margin-right: 12px;
 }
 
 /* Customize container */
-@media (min-width: 768px) {
+@media (min-width: 900px) {
 	.container {
-		max-width: 750px;
+		max-width: 950px;
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 630px) {
 	.avatar {
 		width: 100px;
 		height: 100px;
+	}
+	.about-quote {
+		font-size: 0.8em !important;
 	}
 }
 
