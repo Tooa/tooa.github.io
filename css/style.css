@@ -20,11 +20,6 @@ h4.about-quote {
 	left: 4px;
 }
 
-.listImage {
-	width: 12em;
-	height: auto;
-}
-
 .avatar {
     margin-top: 25px;
 }
@@ -141,17 +136,6 @@ dd { margin-top: 10px;}
 .tags a:hover:before{border-color:transparent #555 transparent transparent;}
 
 
-/* Gradient transparent - color - transparent */
-
-hr.style-two {
-	border: 0;
-	height: 1px;
-	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-	background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-	background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-	background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-}
-
 /* NAVIGATION */
 .nav-pills { border-style:solid; border-width:1px 0; border-color: #eee; }
 
@@ -216,15 +200,18 @@ p { margin: 1.2em 0; }
     margin: 20px 0;
     padding:30px;
 }
+
+
+.listImage {
+	width: 12em;
+	height: auto;
+}
+
 .dp {
     border:10px solid #eee;
+    width: 100px;
+    height:100px;
     transition: all 0.2s ease-in-out;
-}
-.dp:hover {
-    border:2px solid #eee;
-    transform:rotate(360deg);
-    -ms-transform:rotate(360deg);
-    -webkit-transform:rotate(360deg);
 }
 
 .carousel {
