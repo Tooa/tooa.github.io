@@ -12,15 +12,17 @@ permalink: /projects/
             <ul>
                 {% for project in site.data.projects | project.active %}
                     {% if project.active %}
-                        <p>
-                            <strong>{{ project.title }}</strong>: {{ project.subtitle }}
-                        </p>
-                        <p> {{ project.description }}
+                        <li>
+                            <p>
+                                <strong>{{ project.title }}</strong>: {{ project.subtitle }}
+                            </p>
+                            <p> {{ project.description }}
 
-                        <ul class="list-unstyled">
-                            <li>Project Duration: {{ project.duration }}</li>
-                            <li>Project Page {{ project.page }}</li>
-                        </ul>
+                            <ul class="list-unstyled">
+                                <li>Project Duration: {{ project.duration }}</li>
+                                <li>Project Page {{ project.page }}</li>
+                            </ul>
+                        </li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -30,16 +32,18 @@ permalink: /projects/
             <h2>Past Projects</h2>
             <ul>
                 {% for project in site.data.projects | project.active %}
-                    {% if !project.active %}
-                        <p>
-                            <strong>{{ project.title }}</strong>: {{ project.subtitle }}
-                        </p>
-                        <p> {{ project.description }}
+                    {% if project.active != true %}
+                        <li>
+                            <p>
+                                <strong>{{ project.title }}</strong>: {{ project.subtitle }}
+                            </p>
+                            <p> {{ project.description }}
 
-                        <ul class="list-unstyled">
-                            <li>Project Duration: {{ project.duration }}</li>
-                            <li>Project Page {{ project.page }}</li>
-                        </ul>
+                            <ul class="list-unstyled">
+                                <li>Project Duration: {{ project.duration }}</li>
+                                <li>Project Page {{ project.page }}</li>
+                            </ul>
+                        </li>
                     {% endif %}
                 {% endfor %}
             </ul>
