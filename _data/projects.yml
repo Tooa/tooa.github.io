@@ -1,45 +1,36 @@
 # Projects
 ---
 
-- title: “Netzwerk des Tages” (Network of the Day)
-  time: Apr - Nov 2014
-  tools: Scala, Java, Coffeescript, JQuery, Play Framework, D3.js, Highcharts, Marionette.js
-  url: http://maggie.lt.informatik.tu-darmstadt.de/nod/
-  website: http://www.tagesnetzwerk.de
-  facebook: https://www.facebook.com/tagesnetzwerk
-  position: Student assistant
-  tasks: Responsible for ...
-  image: "nod.png"
+- title: Science and Data-Driven Journalism
+  subtitle: Data Extraction and Interactive Visualization of Unexplored Textual Datasets for Investigative Data-Driven Journalism.
   description: |
-    This is a project on the interactive visualization of social media data. The data
-    presentation fuses German Twitter data and a social relation network extracted from
-    German online news. Such fusion allows for comparative analysis of the two types of
-    media. Our system will additionally enable users to explore relationships between
-    named entities, and to investigate events as they develop over time. Cooperative tagging
-    of relationships is enabled through the active involvement of users. The system is available
-    online for a broad user audience.
-  thanks: |
-    “Netzwerk des Tages” (Network of the Day) is funded by the German Federal Ministry of Education and Research (BMBF) via a grant from
-    <a href="http://www.hochschulwettbewerb2014.de/gewinner/netzwerk-des-tages-onlineplattform.html">Hochschulwettbewerb
-    2014</a>.
-  github: NetworkOfDay
+    This Project is a collaboration between the <a href="http://spiegel.de" target=" _blank">Spiegel-Verlag Hamburg </a>, 
+    the Language Technology Group and the Interactive Graphics Systems Group at TU Darmstadt. The project was selected as
+    one of eight projects to be funded by Volkswagen foundation under the call
+    <a href="https://www.volkswagenstiftung.de/datenjournalismus.html" target="_blank">"Science and Data-Driven Journalism" </a>. I'm involved in backend development, large scale engineering and the implementation of statistical NLP techniques.
+  duration: Nov 2015 - Oct 2016
+  page: <a href="https://www.lt.informatik.tu-darmstadt.de/de/research/divid-djdata-extraction-and-interactive-visualization-of-unexplored-textual-datasets-for-investigative-data-driven-journalism/" target="_blank">DIVID-DJ</a>
   active: true
 
-- title: KaVE Feedback Generator
-  time: Apr 2013 - Nov 2014
-  tools: C#, XAML, WPF, Visual Studio, Resharper
-  url: https://resharper-plugins.jetbrains.com/packages/KaVE.VsFeedbackGenerator/
-  website: http://www.kave.cc/
-  position: Student assistant
-  tasks: Responsible for ...
-  image: "kave.png"
+- title: Network of the Day
+  subtitle: Exploration of time-dependent named entity networks.
   description: |
-    The **KaVE project** is about improving developers experience with C# and Visual Studio.
-    One part of the project is to learn about the average developer. To do so, we invite developer to generate (and provide)
-    feedback that reflects their interactions with the development environment.
+    “Netzwerk des Tages” (Network of the Day) is funded by the German Federal Ministry of Education and Research (BMBF) via a grant from
+    <a href="http://www.hochschulwettbewerb2014.de/gewinner/netzwerk-des-tages-onlineplattform.html">Hochschulwettbewerb 2014</a>. 
+    The system enables users to explore relationships between named entities, and to investigate events as they develop over time. 
+    Cooperative tagging of relationships is enabled through the active involvement of users. The system is available online for a broad user audience. 
+    I was involved in backend development and the implementation of statistical NLP techniques.
+  duration: Apr 2014 - Nov 2014
+  page: <a href="http://www.tagesnetzwerk.de" target="_blank">NoD</a>
+  active: false
 
-  thanks: |
-    The work was partially funded by the German Federal Ministry of Education and Research (BMBF) within
-    the Software Campus project KaVE, grant no. 01IS12054, as well as within EC SPRIDE. For the Software
-    Campus project »<a href="http://www.datev.de/nuernberg/">Datev Nürnberg</a>« was elected as industry partner.
-  github: stg-tud/kave
+- title: KaVE-Project
+  subtitle: Getting Help From Experts.
+  description: |
+    The project is part of the <a href="http://www.softwarecampus.de/start/" target="_blank">Software Campus</a>, 
+    a program funded by the German government that supports young researchers and brings academia and industry together. 
+    We cooperate with <a href="https://www.datev.de/web/de/startseite/startseite-n/" target="_blank">DATEV</a> to develop a recommender system for Visual Studio/C#. 
+    The goal of the project is to enrich statically-mined code-recommendation models with feedback provided by experts.
+  duration: Apr 2013 - Nov 2014
+  page: <a href="http://www.kave.cc/" target="_blank">KaVE</a>
+  active: false

@@ -7,175 +7,42 @@ permalink: /projects/
 ---
 <div class="projects">
     <div class="row">
+        <div class="col-md-12">
+            <h2>Recent Projects</h2>
+            <ul>
+                {% for project in site.data.projects | project.active %}
+                    {% if project.active %}
+                        <p>
+                            <strong>{{ project.title }}</strong>: {{ project.subtitle }}
+                        </p>
+                        <p> {{ project.description }}
 
-        <div class="row media-control">
-            <div class="col-md-4 col-xs-4 text-center">
-                <button href="#carousel-project" data-slide="prev" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-arrow-left"></i> Prev</button>
-            </div>
-
-            <div class="col-md-4 col-xs-4 text-center">
-                <div class="" data-toggle="buttons">
-                    <label class="btn btn-success active">
-                        <input type="radio" name="options" id="playButton" autocomplete="off" checked>
-                        <i class="glyphicon glyphicon-play"></i> Play &nbsp;&nbsp;
-                    </label>
-                    <label class="btn btn-danger">
-                        <input type="radio" name="options" id="pauseButton" autocomplete="off">
-                        <i class="glyphicon glyphicon-pause"></i> Pause
-                    </label>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-xs-4 text-center">
-                <button href="#carousel-project" data-slide="next" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-arrow-right"></i>  Next </button>
-            </div>
-        </div>
-
-        <div id="carousel-project" class="carousel slide" data-ride="carousel">
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-
-                {% for project in site.data.projects %}
-
-                    <div {% if project.active %} class="item active" {% else %} class="item" {% endif %}>
-                        <div class="col-md-12"><h2>{{ project.title }}</h2></div>
-                        <div class="holder col-md-12">
-                            <img class="img-responsive" src="../img/{{ project.image }}" alt="...">
-                        </div>
-                        <div class="row">
-                            <div class="col-md-3"></div>
-
-                        </div>
-                        <div class="col-md-12">
-                            <dl>
-                                <!--<dd><span><i class="glyphicon glyphicon-calendar"></i> {{ project.time }}</span></dd>-->
-                                <dt><span class="fa fa-wrench"></span> Toolstack</dt>
-                                <dd>
-                                    {% assign tools = project.tools | split: ', ' %}
-                                    {% for tool in tools %}
-                                    <span class="label label-warning">{{ tool }}</span>
-                                    {% endfor %}
-
-                                </dd>
-                                <dt><span class="fa fa-bookmark"></span> Description</dt>
-                                <dd>
-                                    <p>{{ project.description | markdownify }}</p>
-
-                                    <ul class="list-inline list-unstyled media-control">
-                                        <li><span><i class="glyphicon glyphicon-calendar"></i> {{ project.time }}</span></li>
-                                        <li>|</li>
-                                        <li>
-                                            <span class="fa fa-home"></span>
-                                            <a href="{{ project.website }}">Project Site</a>
-                                        </li>
-                                        <li>|</li>
-                                        <li>
-                                            <span class="fa fa-github"></span>
-                                            <a href="https://github.com/{{ project.github }}">View on GitHub</a>
-                                        </li>
-                                        <li>|</li>
-                                        <li>
-                                            <span class="fa fa-download"></span>
-                                            <a href="{{ project.url }}">Download</a>
-                                        </li>
-
-                                        {% if project.facebook %}
-                                        <li>|</li>
-                                        <li>
-                                            <span class="fa fa-facebook-square"></span>
-                                            <a href="{{ project.facebook }}">FB</a>
-                                        </li>
-                                        {% endif %}
-                                    </ul>
-                                </dd>
-                            </dl>
-                        </div>
-                    </div>
-
+                        <ul class="list-unstyled">
+                            <li>Project Duration: {{ project.duration }}</li>
+                            <li>Project Page {{ project.page }}</li>
+                        </ul>
+                    {% endif %}
                 {% endfor %}
-                </div>
-            </div>
-            <div class="controllers col-md-12 col-xs-12">
-                <!-- Controls -->
-                <!--<a class="left carousel-control" href="#carousel-project" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <a class="right carousel-control" href="#carousel-project" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>-->
-                <!-- Indicators -->
-                <!--<ol class="carousel-indicators">
-                    {% assign counter = 0 %}
-                    {% for project in site.data.projects %}
-                        <li data-target="#carousel-project" data-slide-to="{{ counter }}" {% if project.active %} class="active" {% endif %}></li>
-                        {% assign counter = counter | plus: 1 %}
-                    {% endfor %}
-                </ol>-->
-            </div>
-
-
-
-    <!--{% for project in site.data.projects %}
-
-        <div class="panel panel-info">
-            <div class="panel-heading"><h4 class="panel-title">{{ project.title }}</h4></div>
-            <div class="panel-body">
-                {% if project.image %}
-                    <img class="img-responsive" src="../img/{{ project.image }}">
-                {% endif %}
-                <p>{{ project.description | markdownify }}</p>
-
-                <dl>
-                    {% if project.thanks %}
-                        <dt><span class="fa fa-star"></span> Acknowledgement</dt>
-                        <dd>{{ project.thanks }}</dd>
-                    {% endif %}
-
-                    <dt><span class="fa fa-wrench"></span> Toolstack</dt>
-                    <dd>
-                        {% assign tools = project.tools | split: ', ' %}
-                        {% for tool in tools %}
-                            <span class="label label-warning">{{ tool }}</span>
-                        {% endfor %}
-
-                    </dd>
-
-                    <dt><span class="fa fa-group"></span> Position</dt>
-                    <dd>{{ project.position }}</dd>
-
-                    <dt><span class="fa fa-user"></span> Responsibilities</dt>
-                    <dd>{{ project.tasks }}</dd>
-                </dl>
-            </div>
-            <div class="panel-footer panel-default">
-                <ul class="list-inline list-unstyled">
-                    <li><span><i class="glyphicon glyphicon-calendar"></i> {{ project.time }}</span></li>
-                    <li>|</li>
-                    <li>
-                        <span class="fa fa-home"></span>
-                        <a href="{{ project.website }}">Project Site</a>
-                    </li>
-                    <li>|</li>
-                    <li>
-                        <span class="fa fa-github"></span>
-                        <a href="https://github.com/{{ project.github }}">View on GitHub</a>
-                    </li>
-                    <li>|</li>
-                    <li>
-                        <span class="fa fa-download"></span>
-                        <a href="{{ project.url }}">Download</a>
-                    </li>
-
-                    {% if project.facebook %}
-                        <li>|</li>
-                        <li>
-                            <span class="fa fa-facebook-square"></span>
-                            <a href="{{ project.facebook }}">FB</a>
-                        </li>
-                    {% endif %}
-                </ul>
-            </div>
+            </ul>
         </div>
-    {% endfor %} -->
+
+        <div class="col-md-12 blog-section">
+            <h2>Past Projects</h2>
+            <ul>
+                {% for project in site.data.projects | project.active %}
+                    {% if !project.active %}
+                        <p>
+                            <strong>{{ project.title }}</strong>: {{ project.subtitle }}
+                        </p>
+                        <p> {{ project.description }}
+
+                        <ul class="list-unstyled">
+                            <li>Project Duration: {{ project.duration }}</li>
+                            <li>Project Page {{ project.page }}</li>
+                        </ul>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 </div> <!-- .projects -->
