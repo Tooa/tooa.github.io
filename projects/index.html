@@ -10,7 +10,7 @@ permalink: /projects/
         <div class="col-md-12">
             <h2>Recent Projects</h2>
             <ul>
-                {% for project in site.data.projects | project.active %}
+                {% for project in site.data.projects %}
                     {% if project.active %}
                         <li>
                             <p>
@@ -20,7 +20,7 @@ permalink: /projects/
 
                             <ul class="list-unstyled">
                                 <li>Project Duration: {{ project.duration }}</li>
-                                <li>Project Page {{ project.page }}</li>
+                                <li>Project Page: {{ project.page }}</li>
                             </ul>
                         </li>
                     {% endif %}
@@ -31,7 +31,7 @@ permalink: /projects/
         <div class="col-md-12 blog-section">
             <h2>Past Projects</h2>
             <ul>
-                {% for project in site.data.projects | project.active %}
+                {% for project in site.data.projects %}
                     {% if project.active != true %}
                         <li>
                             <p>
@@ -41,7 +41,7 @@ permalink: /projects/
 
                             <ul class="list-unstyled">
                                 <li>Project Duration: {{ project.duration }}</li>
-                                <li>Project Page {{ project.page }}</li>
+                                <li>Project Page: {{ project.page }}</li>
                             </ul>
                         </li>
                     {% endif %}

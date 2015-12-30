@@ -41,7 +41,7 @@ layout: default
         </div>
 
         <div class="col-md-12 col-xs-12 blog-section">
-            <p class="pull-right">{% if page.previous.url %} <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; Previous Blog Post</a>  {% endif %}  |  <a href="#">Back to top</a>  |  {% if page.next.url %}  <a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">Next Blog Post &raquo; </a>  {% endif %} </p>
+            <p class="pull-right">{% if page.previous.url %} <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; Previous Article</a>  {% endif %}  |  <a href="#">Back to top</a>  |  {% if page.next.url %}  <a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">Next Article &raquo; </a>  {% endif %} </p>
         </div>
 
         <div class="col-md-12 col-xs-12 blog-section">
@@ -58,7 +58,7 @@ layout: default
         </div>
 
         {% if page.comments %}
-            <div class="col-md-12 blog-section">
+            <div class="col-md-12 col-xs-12 blog-section">
                 <h2>Comments Section</h2>
                 <p>Feel free to comment on the post. But keep it clean and on topic.</p>
                 {% include disqus.html %}
