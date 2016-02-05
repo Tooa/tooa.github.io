@@ -11,11 +11,29 @@ tags:
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sem quam, elementum a felis mattis, pretium elementum dolor. Integer sed nulla eu ligula pulvinar rhoncus. Pellentesque consectetur dui quis leo elementum, vel rutrum urna dapibus. Nam vulputate accumsan ante at commodo. Donec eu pulvinar metus, a efficitur ex. Curabitur a lacinia mi. Sed ex est, consectetur eget fermentum et, convallis sit amet quam. Duis aliquet aliquam maximus.
 
-```ruby
+{% highlight cpp %}
+// Code
+int a = 3;
+{% endhighlight %}
+
+~~~cpp
+// Code
+~~~
+
+``` ruby
 require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
-
 ```
+
+`​`` html
+<a href="#">Hello world</a>
+`​``
+
+{% highlight ruby %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
 
 
