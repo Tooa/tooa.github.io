@@ -1,11 +1,8 @@
 title: Uli Fahrer
 url: http://www.uli-fahrer.de
 permalink: /notes/:year/:month/:day/:title
-markdown: kramdown
 baseurl: ""
 description: "Uli Fahrer: CS Student, Developer"
-
-highlighter: rouge
 
 kramdown:
   input: GFM
