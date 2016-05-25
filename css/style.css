@@ -111,6 +111,10 @@ dd { margin-top: 10px;}
 	margin-bottom: 20px;
 }
 
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
 
 
 /* ==========================================================================

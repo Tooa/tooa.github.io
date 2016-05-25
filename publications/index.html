@@ -6,11 +6,25 @@ description: Current puplications
 permalink: /publications/
 ---
 <div class="publications">
+
+	<div class="alert alert-info" role="alert">
+		<div class="row vertical-align">
+			<div class="col-md-1 col-xs-1">
+				<img src="https://scholar.google.com/citations/images/avatar_scholar_150.jpg" class="img-responsive avatar" >
+			</div>
+			<div class="col-md-4 col-xs-4">
+				<a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=hZMWg78AAAAJ" class="alert-link" target="_blank">
+					Google Scholar Profile
+				</a>
+			</div>
+		</div>
+	</div>
+
 	{% assign sorted_workshops = (site.data.publications | sort: 'year') %}
 
 	{% include publication-list.html publications=sorted_workshops type="workshop" headline="Workshop proceedings" %}
-		
+
 	{% include publication-list.html publications=sorted_workshops type="poster" headline="Poster proceedings" %}
 
-    {% include publication-list.html publications=sorted_workshops type="book" headline="Other contributions" %}
+  {% include publication-list.html publications=sorted_workshops type="book" headline="Other contributions" %}
 </div> <!-- .publications -->
