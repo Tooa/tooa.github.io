@@ -36,16 +36,24 @@
   url: http://www.gris.tu-darmstadt.de/research/vissearch/publications/pdf/VMV_NetworkOfTheDay.pdf
   type: poster
 
+- title: >
+      "new/s/leak – Information Extraction and Visualization for an Investigative
+       Data Journalists"
+  author: >
+      Seid Muhie Yimam, Heiner Ulrich, Tatiana von Landesberger, Marcel Rosenbach, Michaela Regneri, 
+      Alexander Panchenko, Franziska Lehmann, Uli Fahrer, Chris Biemann and Kathrin Ballweg
+  year: 2016
+  booktitle: Proceedings of the 54th Annual Meeting of the Association of Computational Linguistics. ACL 2016.
+  url: http://acl2016.org/index.php?article_id=13#demos
+  type: demo
+
 
 - title: >
-    "Die Stellung der deutschen Sprache in der Welt"
+    "Die Stellung der deutschen Sprache in der Welt: Die Standardsprache in Österreich, der Schweiz, Deutschland, Liechtenstein, Luxemburg, Ostbelgien und Südtirol  sowie Rumänien, Namibia und Mexiko."
   author: Ulrich Ammon
   year: 2015
-  publisher: "Berlin/ München/ Boston: Walter de Gruyter"
+  publisher: "Berlin/ München/ Boston: De Gruyter Mouton"
   url: http://www.goo.gl/FEkfB4
   meta: |
-    During my work as student assistant for the <a href="http://www.lt.tu-darmstadt.de/de/lt-home/" target="_blank">Language Technology Group</a>
-                    I've contributed a Twitter-Analysis to the book <i>"Die Stellung der deutschen Sprache in der Welt"</i>
-                    written by <a href="http://www.ulrichammon.de/" target="_blank">Prof. Dr. Phil. Ulrich Amorn</a>. 
-                    The book is available on <a href="http://goo.gl/2Y3eCN" target="_blank">Amazon</a>.
+    I've contributed a Twitter-Analysis to the book <i>"Die Stellung der deutschen Sprache in der Welt"</i> during my work as student assistant for the <a href="http://www.lt.tu-darmstadt.de/de/lt-home/" target="_blank">Language Technology Group</a> at TU Darmstadt. It is written by <a href="http://www.ulrichammon.de/" target="_blank">Prof. Dr. Phil. Ulrich Amorn</a> and is available on <a href="http://goo.gl/2Y3eCN" target="_blank">Amazon</a>.
   type: book

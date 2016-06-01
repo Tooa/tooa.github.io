@@ -6,8 +6,9 @@
                 {% if publication.type == include.type %}
                 <li>
                     <p><small>
-                        {{ publication.author }} ({{ publication.year }}): {{ publication.title }}.
-                        {{ publication.booktitle }},
+						{{ publication.title }} </br>
+                        {{ publication.author }} ({{ publication.year }}) </br>
+                        In: <em>{{ publication.booktitle }}</em>, 
                         {% if publication.pages %}
                         pages {{ publication.pages }},
                         {% endif %}
