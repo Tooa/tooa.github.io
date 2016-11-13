@@ -7,12 +7,12 @@
                 <li>
                     <p><small>
 						{{ publication.title }} </br>
-                        {{ publication.author }} ({{ publication.year }}) </br>
+                        {{ publication.author }}</br>
                         In: <em>{{ publication.booktitle }}</em>, 
                         {% if publication.pages %}
                         pages {{ publication.pages }},
                         {% endif %}
-                        {{ publication.publisher }} (<a href="{{ publication.url }}">pdf</a>).
+                        {{ publication.location }}, {{ publication.month }} {{ publication.year }} (<a href="{{ publication.url }}">pdf</a>).
                     </small></p>
                     <p>
                         {% if publication.meta %}

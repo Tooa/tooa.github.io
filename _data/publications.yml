@@ -8,8 +8,9 @@
       Darina Benikova, Uli Fahrer, Alexander Gabriel, Manuel Kaufmann,
       Seid Muhie Yimam, Tatiana von Landesberger and Chris Biemann
   year: 2014
+  month: October
   booktitle: Workshop Proceedings of the 12th KONVENS 2014
-  publisher: Universität Hildesheim
+  location: Universitätsverlag Hildesheim
   url: http://opus.bsz-bw.de/ubhi/volltexte/2014/294
   type: workshop
   
@@ -18,41 +19,58 @@
     on Twitter for the German Election 2013
   author: Uli Fahrer
   year: 2013
+  month: March
   booktitle: "In GI-Edition Lecture Notes in Informatics"
   pages: 257–260
-  publisher: Potsdam, Germany
-  url: http://maggie.lt.informatik.tu-darmstadt.de/thesis/bachelor/BTWitter/core/static/files/workshop_paper.pdf
+  location: Potsdam, Germany
+  url: https://www.gi.de/fileadmin/redaktion/Seminars/lni-s-13.pdf
   type: workshop
   
 - title: >
-      "Network of the Day: Interactive Visualization of
-      Time-Dependent Entity Relation Networks"
+      Network of the Day: Interactive Visualization of
+      Time-Dependent Entity Relation Networks
   author: >
       Uli Fahrer, Darina Benikova, Alexander Gabriel, Manuel Kaufmann, 
       Seid Muhie Yimam, Tatiana von Landesberger and Chris Biemann
   year: 2014
+  month: October
   booktitle: Vision Modeling Visualization Workshop
-  publisher: TU Darmstadt, Germany
+  location: TU Darmstadt, Germany
   url: http://www.gris.tu-darmstadt.de/research/vissearch/publications/pdf/VMV_NetworkOfTheDay.pdf
   type: poster
 
 - title: >
-      "new/s/leak – Information Extraction and Visualization for an Investigative
-       Data Journalists"
+      new/s/leak – Information Extraction and Visualization for an Investigative
+       Data Journalists
   author: >
       Seid Muhie Yimam, Heiner Ulrich, Tatiana von Landesberger, Marcel Rosenbach, Michaela Regneri, 
       Alexander Panchenko, Franziska Lehmann, Uli Fahrer, Chris Biemann and Kathrin Ballweg
+  booktitle: Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics on Interactive Poster and Demonstration Sessions
+  pages: 163-168
+  location: Berlin, Germany
   year: 2016
-  booktitle: Proceedings of the 54th Annual Meeting of the Association of Computational Linguistics. ACL 2016.
-  url: http://acl2016.org/index.php?article_id=13#demos
+  month: August
+  url: http://aclweb.org/anthology/P16-4028
+  type: demo
+
+- title: >
+      new/s/leak – A Tool for Visual Exploration of Large Text Document Collections in the Journalistic Domain
+  author: >
+      Kathrin Ballweg and Florian Zouhar and Patrick Wilhelmi-Dworski and Tatiana von Landesberger and Uli Fahrer and Alexander Panchenko and Seid Muhie Yimam and 		  Chris Biemann and Michaela Regneri and Heiner Ulrich
+  booktitle: VIS workshop Visualization in Practice
+  pages: to appear
+  location: Baltimore Maryland, USA
+  year: 2016
+  month: October
+  url: http://www.gris.tu-darmstadt.de/research/vissearch/publications/pdf/ballweg2016VIP.pdf
   type: demo
 
 
 - title: >
-    "Die Stellung der deutschen Sprache in der Welt: Die Standardsprache in Österreich, der Schweiz, Deutschland, Liechtenstein, Luxemburg, Ostbelgien und Südtirol  sowie Rumänien, Namibia und Mexiko."
+    Die Stellung der deutschen Sprache in der Welt: Die Standardsprache in Österreich, der Schweiz, Deutschland, Liechtenstein, Luxemburg, Ostbelgien und Südtirol  sowie Rumänien, Namibia und Mexiko.
   author: Ulrich Ammon
   year: 2015
-  publisher: "Berlin/ München/ Boston: De Gruyter Mouton"
+  location: "Berlin/ München/ Boston: De Gruyter Mouton"
   url: http://www.goo.gl/FEkfB4
   meta: |
     I've contributed a Twitter-Analysis to the book <i>"Die Stellung der deutschen Sprache in der Welt"</i> during my work as student assistant for the <a href="http://www.lt.tu-darmstadt.de/de/lt-home/" target="_blank">Language Technology Group</a> at TU Darmstadt. It is written by <a href="http://www.ulrichammon.de/" target="_blank">Prof. Dr. Phil. Ulrich Amorn</a> and is available on <a href="http://goo.gl/2Y3eCN" target="_blank">Amazon</a>.
