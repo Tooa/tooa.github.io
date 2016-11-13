@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: /blogarchives/
+Disallow: /files/
