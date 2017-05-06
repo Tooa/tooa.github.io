@@ -37,7 +37,7 @@
   booktitle: Vision Modeling Visualization Workshop
   location: TU Darmstadt, Germany
   url: http://www.gris.tu-darmstadt.de/research/vissearch/publications/pdf/VMV_NetworkOfTheDay.pdf
-  type: poster
+  type: workshop
 
 - title: >
       new/s/leak – Information Extraction and Visualization for an Investigative
@@ -56,14 +56,26 @@
 - title: >
       new/s/leak – A Tool for Visual Exploration of Large Text Document Collections in the Journalistic Domain
   author: >
-      Kathrin Ballweg and Florian Zouhar and Patrick Wilhelmi-Dworski and Tatiana von Landesberger and Uli Fahrer and Alexander Panchenko and Seid Muhie Yimam and 		  Chris Biemann and Michaela Regneri and Heiner Ulrich
+      Kathrin Ballweg, Florian Zouhar, Patrick Wilhelmi-Dworski, Tatiana von Landesberger, Uli Fahrer, Alexander Panchenko, Seid Muhie Yimam, Chris Biemann, Michaela Regneri and Heiner Ulrich
   booktitle: VIS workshop Visualization in Practice
   pages: to appear
   location: Baltimore Maryland, USA
   year: 2016
   month: October
   url: http://www.gris.tu-darmstadt.de/research/vissearch/publications/pdf/ballweg2016VIP.pdf
-  type: demo
+  type: workshop
+
+- title: >
+      Guidance for Multi-Type Entity Graphs from Text Collections
+  author: >
+      Martin Müller, Kathrin Ballweg, Tatiana von Landesberger, Seid Muhie Yimam, Uli Fahrer, Chris Biemann, Marcel Rosenbach, Michaela Regneri and Heiner Ulrich
+  booktitle: EuroVis Workshop on Visual Analytics
+  pages: to appear
+  location: Barcelona, Spain
+  year: 2017
+  month: October
+  url: https://www.inf.uni-hamburg.de/en/inst/ab/lt/publications/2017-mueller-eurova-newsleak-guidance.pdf
+  type: workshop
 
 
 - title: >
