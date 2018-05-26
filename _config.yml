@@ -10,8 +10,3 @@ kramdown:
 
 twitter_username: UliFahrer
 github_username:  Tooa
-
-comments:
-    provider: disqus
-    disqus:
-        short_name: t0a
