@@ -38,15 +38,15 @@ h4, h5, h6 {
 p { margin: 0.7em 0; }
 
 
-.dropcap:first-letter { 
-	float: left; 
-	color: #3276b1; 
-	font-size: 75px; 
-	line-height: 50px; 
-	padding-top: 4px; 
-	padding-right: 8px; 
-	padding-left: 3px; 
-	font-family: Georgia; 
+.dropcap:first-letter {
+	float: left;
+	color: #3276b1;
+	font-size: 75px;
+	line-height: 50px;
+	padding-top: 4px;
+	padding-right: 8px;
+	padding-left: 3px;
+	font-family: Georgia;
 }
 
 h4.about-quote {
@@ -82,10 +82,10 @@ dt { margin-top: 30px; margin-bottom: 0px;}
 dd { margin-top: 10px;}
 
 /* NAVIGATION */
-.nav-pills { 
-	border-style: solid; 
-	border-width: 1px 0; 
-	border-color: #eee; 
+.nav-pills {
+	border-style: solid;
+	border-width: 1px 0;
+	border-color: #eee;
 }
 
 .nav-pills > li > a {
@@ -243,7 +243,7 @@ dd { margin-top: 10px;}
 	font-size: 26px;
 }
 
-.square-mark li:before {    
+.square-mark li:before {
 	font-family: 'FontAwesome';
 	content: '\f101';
 	padding-left: 25px;
@@ -256,7 +256,7 @@ dd { margin-top: 10px;}
 }
 
 .dp {
-    border:10px solid #eee;
+    border: 5px solid #eee;
     width: 100px;
     height:100px;
     transition: all 0.2s ease-in-out;
