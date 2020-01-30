@@ -20,7 +20,7 @@ permalink: /publications/
 		</div>
 	</div>
 
-	{% assign sorted_workshops = (site.data.publications | sort: 'year') %}
+	{% assign sorted_workshops = site.data.publications | sort: 'year' %}
 
 	{% include publication-list.html publications=sorted_workshops type="demo" headline="System Demonstration Paper" %}
 
