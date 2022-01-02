@@ -23,7 +23,7 @@
   booktitle: "In GI-Edition Lecture Notes in Informatics"
   pages: 257–260
   location: Potsdam, Germany
-  url: https://www.gi.de/fileadmin/redaktion/Seminars/lni-s-13.pdf
+  url: https://dl.gi.de/handle/20.500.12116/4930
   type: workshop
 
 - title: >
@@ -36,7 +36,7 @@
   month: October
   booktitle: Vision Modeling Visualization Workshop
   location: TU Darmstadt, Germany
-  url: http://www.gris.tu-darmstadt.de/research/vissearch/publications/pdf/VMV_NetworkOfTheDay.pdf
+  url: https://www.researchgate.net/publication/266851380_Network_of_the_Day_Interactive_Visualization_of_Time-Dependent_Entity_Relation_Networks_from_Online_Sources
   type: workshop
 
 - title: >
@@ -62,7 +62,7 @@
   location: Baltimore Maryland, USA
   year: 2016
   month: October
-  url: http://www.gris.tu-darmstadt.de/research/vissearch/publications/pdf/ballweg2016VIP.pdf
+  url: https://www.researchgate.net/publication/314102097_newsleak_-_A_Tool_for_Visual_Exploration_of_Large_Text_Document_Collections_in_the_Journalistic_Domain
   type: workshop
 
 - title: >
@@ -85,5 +85,5 @@
   location: "Berlin/ München/ Boston: De Gruyter Mouton"
   url: https://www.amazon.de/Die-Stellung-deutschen-Sprache-Welt/dp/3110192985/ref=sr_1_1?ie=UTF8&qid=1423745324&sr=8-1&keywords=Die+Stellung+der+deutschen+Sprache+in+der+Welt
   meta: |
-    I've contributed a Twitter-Analysis to the book <i>"Die Stellung der deutschen Sprache in der Welt"</i> during my work as student assistant for the <a href="http://www.lt.tu-darmstadt.de/de/lt-home/" target="_blank">Language Technology Group</a> at TU Darmstadt. It is written by <a href="http://www.ulrichammon.de/" target="_blank">Prof. Dr. Phil. Ulrich Amorn</a> and is available on <a href="http://goo.gl/2Y3eCN" target="_blank">Amazon</a>.
+    I've contributed a Twitter-Analysis to the book <i>"Die Stellung der deutschen Sprache in der Welt"</i> during my work as student assistant for the <a href="https://www.inf.uni-hamburg.de/en/inst/ab/lt/home.html" target="_blank">Language Technology Group</a> at TU Darmstadt. It is written by <a href="http://www.ulrichammon.de/" target="_blank">Prof. Dr. Phil. Ulrich Amorn</a> and is available on <a href="http://goo.gl/2Y3eCN" target="_blank">Amazon</a>.
   type: book
