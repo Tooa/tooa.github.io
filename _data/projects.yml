@@ -2,10 +2,10 @@
 ---
 
 - title: Science and Data-Driven Journalism
-  subtitle: Data Extraction and Interactive Visualization of Unexplored Textual Datasets for Investigative Data-Driven Journalism.
+  subtitle: Data Extraction and Interactive Visualization of Unexplored Textual Datasets for Investigative Data-Driven Journalism
   description: |
-    This Project is a collaboration between the <a href="https://spiegel.de" target=" _blank">Spiegel-Verlag Hamburg </a>,
-    the Language Technology Group and the Interactive Graphics Systems Group at TU Darmstadt. The project was selected as
+    The project is a collaboration between the <a href="https://spiegel.de" target=" _blank">Spiegel-Verlag Hamburg </a>,
+    the Language Technology Group and the Interactive Graphics Systems Group at TU Darmstadt. It was selected as
     one of eight projects to be funded by Volkswagen foundation under the call
     <a href="https://www.volkswagenstiftung.de/en/funding/science-and-data-driven-journalism" target="_blank">"Science and Data-Driven Journalism"</a>. I'm involved in backend development, large scale engineering and the implementation of statistical NLP techniques.
   duration: Nov 2015 - Dec 2016
@@ -13,24 +13,24 @@
   active: false
 
 - title: Network of the Day
-  subtitle: Exploration of time-dependent named entity networks.
+  subtitle: Exploration of time-dependent named entity networks
   description: |
     “Netzwerk des Tages” (Network of the Day) is funded by the German Federal Ministry of Education and Research (BMBF) via a grant from
     <a href="https://www.wissenschaft-im-dialog.de/medien/pressemitteilungen/artikel/beitrag/nachwuchswissenschaftler-erklaeren-die-digitale-welt/">Hochschulwettbewerb 2014</a>.
     The system enables users to explore relationships between named entities, and to investigate events as they develop over time.
     Cooperative tagging of relationships is enabled through the active involvement of users. The system is available online for a broad user audience.
-    I was involved in backend development and the implementation of statistical NLP techniques.
+    I'm involved in backend development and the implementation of statistical NLP techniques.
   duration: Apr 2014 - Nov 2014
   page: <a href="https://www.inf.uni-hamburg.de/en/inst/ab/lt/resources/demos/network-of-the-day.html" target="_blank">NoD</a>
   active: false
 
 - title: KaVE-Project
-  subtitle: Getting Help From Experts.
+  subtitle: Getting Help From Experts
   description: |
     The project is part of the <a href="https://www.softwarecampus.de" target="_blank">Software Campus</a>,
     a program funded by the German government that supports young researchers and brings academia and industry together.
-    We cooperate with <a href="https://www.datev.de/web/de/startseite/startseite-n/" target="_blank">DATEV</a> to develop a recommender system for Visual Studio/C#.
-    The goal of the project is to enrich statically-mined code-recommendation models with feedback provided by experts.
+    The project is in collaboration with <a href="https://www.datev.de/web/de/startseite/startseite-n/" target="_blank">DATEV</a> to develop a recommender system for Visual Studio/C#.
+    The goal of the project is to enrich statically-mined code-recommendation models with feedback provided by experts. As a student research assistant, I am involved in writing a code-recommendation plugin for Visual Studio/C#.
   duration: Apr 2013 - Nov 2014
   page: <a href="https://www.kave.cc/" target="_blank">KaVE</a>
   active: false
