@@ -11,7 +11,7 @@
   month: October
   booktitle: Workshop Proceedings of the 12th KONVENS 2014
   location: Universitätsverlag Hildesheim
-  url: http://opus.bsz-bw.de/ubhi/volltexte/2014/294
+  url: https://hilpub.uni-hildesheim.de/entities/publication/9e327cf4-1a16-4261-b0ab-ee86cb8cb929/details
   type: workshop
 
 - title: >
@@ -50,7 +50,7 @@
   location: Berlin, Germany
   year: 2016
   month: August
-  url: http://aclweb.org/anthology/P16-4028
+  url: https://aclanthology.org/P16-4028/
   type: demo
 
 - title: >
