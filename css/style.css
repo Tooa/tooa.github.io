@@ -110,11 +110,12 @@ p { margin: 0.7em 0; }
 	font-family: Georgia;
 }
 
-h4.about-quote {
+h3.about-quote {
 	font-style: italic;
 	position: relative;
 	letter-spacing: 1px;
 	left: 4px;
+	padding: 100px;
 }
 
 span.site-tag a {
@@ -226,7 +227,7 @@ dd { margin-top: 10px;}
     margin-top: 3px;
 }
 
-.tags{
+.tags {
 	margin:0;
 	padding:0;
 	position:absolute;
@@ -314,11 +315,4 @@ dd { margin-top: 10px;}
 .media {
     margin: 20px 0;
     padding:30px;
-}
-
-.dp {
-    border: 5px solid #eee;
-    width: 100px;
-    height:100px;
-    transition: all 0.2s ease-in-out;
 }
