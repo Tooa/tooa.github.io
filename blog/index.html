@@ -5,13 +5,14 @@ blog: active
 description: Blog
 permalink: /blog/
 ---
+
 <div class="blog">
     {% for post in site.posts %}
         <!-- TODO: resolve code duplication: see tag-page.html -->
         <div class="row blog-section">
-            <div class="col-md-12 hidden-xs hidden-sm">
-                <h3>
-                    <strong><a href="{{ post.url }}">{{ post.title }}</a></strong>
+            <div class="col-md-12 d-none d-sm-block">
+                <h3 class="fw-bold">
+                    <a href="{{ post.url }}">{{ post.title }}</a>
                 </h3>
                 <i class="fa fa-calendar"></i> {{ post.date | date: "%B %e, %Y" }}
 
@@ -29,7 +30,7 @@ permalink: /blog/
             </div>
 
 
-            <div class="col-xs-12 hidden-md hidden-lg hidden-print">
+            <div class="col-12 d-block d-sm-none d-print-none">
                 <h3><strong><a href="{{ post.url }}">{{ post.title }}</a></strong></h3>
             </div>
         </div>

@@ -7,10 +7,11 @@
     The project is a collaboration between the <a href="https://spiegel.de" target=" _blank">Spiegel-Verlag Hamburg </a>,
     the Language Technology Group and the Interactive Graphics Systems Group at TU Darmstadt. It was selected as
     one of eight projects to be funded by Volkswagen foundation under the call
-    <a href="https://www.volkswagenstiftung.de/en/funding/funding-offer/science-and-data-driven-journalism-completed" target="_blank">"Science and Data-Driven Journalism"</a>. I'm involved in backend development, large scale engineering and the implementation of statistical NLP techniques.
+    <a href="https://www.volkswagenstiftung.de/en/funding/funding-offer/science-and-data-driven-journalism-completed" target="_blank">"Science and Data-Driven Journalism"</a>.
   duration: Nov 2015 - Dec 2016
   page: <a href="https://www.inf.uni-hamburg.de/en/inst/ab/lt/resources/demos/new-s-leak.html" target="_blank">Newsleak</a>
   active: false
+  role: I'm involved in backend development, large scale engineering and the implementation of statistical NLP techniques.
 
 - title: Network of the Day
   subtitle: Exploration of time-dependent named entity networks
@@ -19,10 +20,10 @@
     <a href="https://www.wissenschaft-im-dialog.de/medien/pressemitteilungen/artikel/beitrag/nachwuchswissenschaftler-erklaeren-die-digitale-welt/">Hochschulwettbewerb 2014</a>.
     The system enables users to explore relationships between named entities, and to investigate events as they develop over time.
     Cooperative tagging of relationships is enabled through the active involvement of users. The system is available online for a broad user audience.
-    I'm involved in backend development and the implementation of statistical NLP techniques.
   duration: Apr 2014 - Nov 2014
   page: <a href="https://www.inf.uni-hamburg.de/en/inst/ab/lt/resources/demos/network-of-the-day.html" target="_blank">NoD</a>
   active: false
+  role: I'm involved in backend development and the implementation of statistical NLP techniques.
 
 - title: KaVE-Project
   subtitle: Getting Help From Experts
@@ -30,7 +31,8 @@
     The project is part of the <a href="https://www.softwarecampus.de" target="_blank">Software Campus</a>,
     a program funded by the German government that supports young researchers and brings academia and industry together.
     The project is in collaboration with <a href="https://www.datev.de/web/de/startseite/startseite-n/" target="_blank">DATEV</a> to develop a recommender system for Visual Studio/C#.
-    The goal of the project is to enrich statically-mined code-recommendation models with feedback provided by experts. As a student research assistant, I am involved in writing a code-recommendation plugin for Visual Studio/C#.
+    The goal of the project is to enrich statically-mined code-recommendation models with feedback provided by experts.
   duration: Apr 2013 - Nov 2014
   page: <a href="https://www.kave.cc/" target="_blank">KaVE</a>
   active: false
+  role: As a student research assistant, I am involved in writing a code-recommendation plugin for Visual Studio/C#.

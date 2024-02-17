@@ -110,13 +110,6 @@ p { margin: 0.7em 0; }
 	font-family: Georgia;
 }
 
-h4.about-quote {
-	font-style: italic;
-	position: relative;
-	letter-spacing: 1px;
-	left: 4px;
-}
-
 span.site-tag a {
 	display: inline-block;
 	margin-right: 12px;
@@ -142,17 +135,6 @@ span.site-tag a {
 dt { margin-top: 30px; margin-bottom: 0px;}
 dd { margin-top: 10px;}
 
-/* NAVIGATION */
-.nav-pills {
-	border-style: solid;
-	border-width: 1px 0;
-	border-color: #eee;
-}
-
-.nav-pills > li > a {
-	border-radius:0px;
-}
-
 /* HEADER */
 .site-header { padding-top:1.250em; padding-bottom: 3em; text-align:center; }
 
@@ -164,13 +146,6 @@ dd { margin-top: 10px;}
 }
 
 .site-footer > .row { border-top: 1px solid #eee; }
-
-
-/* Software TOC */
-#toc {
-	list-style: none;
-	margin-bottom: 20px;
-}
 
 .vertical-align {
     display: flex;
@@ -198,21 +173,6 @@ dd { margin-top: 10px;}
     margin: 2.5em 0;
 }
 
-.share-page {
-	text-align: center;
-	background: steelblue;
-	color: white;
-	padding: 8px 15px;
-	border-radius: 5px;
-	margin: 1.5px 0px;
-}
-
-.share-page a {
-	font-weight: 700;
-	color: #fff;
-	margin-left: 10px;
-}
-
 .blog-section {
 	padding-top: 20px;
 }
@@ -226,7 +186,7 @@ dd { margin-top: 10px;}
     margin-top: 3px;
 }
 
-.tags{
+.tags {
 	margin:0;
 	padding:0;
 	position:absolute;
@@ -314,11 +274,4 @@ dd { margin-top: 10px;}
 .media {
     margin: 20px 0;
     padding:30px;
-}
-
-.dp {
-    border: 5px solid #eee;
-    width: 100px;
-    height:100px;
-    transition: all 0.2s ease-in-out;
 }

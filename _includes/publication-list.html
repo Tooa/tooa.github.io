@@ -1,11 +1,13 @@
-<div class="panel panel-info">
-    <div class="panel-heading"><h4 class="panel-title">{{ include.headline }}</h4></div>
-    <div class="panel-body">
+<div class="card my-4">
+    <div class="card-header">
+        <h3 class="card-title">{{ include.headline }}</h4>
+    </div>
+    <div class="card-body">
         <ol>
             {% for publication in include.publications reversed %}
                 {% if publication.type == include.type %}
                 <li>
-                    <p><small>
+                    <p class="card-text"><small>
 						{{ publication.title }} </br>
                         {{ publication.author }}</br>
                         In: <em>{{ publication.booktitle }}</em>, 

@@ -16,11 +16,14 @@ permalink: /projects/
                             <p>
                                 <strong>{{ project.title }}</strong>: {{ project.subtitle }}
                             </p>
-                            <p> {{ project.description }}
+                            <p>
+                                {{ project.description }}
+                            </p>
 
                             <ul class="list-unstyled">
-                                <li>Project duration: {{ project.duration }}</li>
-                                <li>Project page: {{ project.page }}</li>
+                                <li><span class="fw-bold">Project duration:</span> {{ project.duration }}</li>
+                                <li><span class="fw-bold">Project page:</span> {{ project.page }}</li>
+                                <li><span class="fw-bold">Role:</span> {{ project.role }}</li>
                             </ul>
                         </li>
                     {% endif %}
@@ -37,11 +40,14 @@ permalink: /projects/
                             <p>
                                 <strong>{{ project.title }}</strong>: {{ project.subtitle }}
                             </p>
-                            <p> {{ project.description }}
+                            <p>
+                                {{ project.description }}
+                            </p>
 
                             <ul class="list-unstyled">
-                                <li>Project duration: {{ project.duration }}</li>
-                                <li>Project page: {{ project.page }}</li>
+                                <li><span class="fw-bold">Project duration:</span> {{ project.duration }}</li>
+                                <li><span class="fw-bold">Project page:</span> {{ project.page }}</li>
+                                <li><span class="fw-bold">Role:</span> {{ project.role }}</li>
                             </ul>
                         </li>
                     {% endif %}
