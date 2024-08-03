@@ -136,22 +136,19 @@ dt { margin-top: 30px; margin-bottom: 0px;}
 dd { margin-top: 10px;}
 
 /* HEADER */
-.site-header { padding-top:1.250em; padding-bottom: 3em; text-align:center; }
-
-
-/* FOOTER */
-.site-footer {
-	padding-top: 60px;
-	height:60px;   /* Height of the footer */
+.site-header { 
+	padding-top:1.250em; 
+	padding-bottom: 3em; 
+	text-align:center; 
 }
 
-.site-footer > .row { border-top: 1px solid #eee; }
+/* FOOTER */
+footer > .row { border-top: 1px solid #eee; }
 
 .vertical-align {
     display: flex;
     align-items: center;
 }
-
 
 /* ==========================================================================
 	2. Blog

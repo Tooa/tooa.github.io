@@ -6,8 +6,8 @@ layout: blog-overview
 {% for post in site.tags[page.tag] %}
     <div class="row blog-section">
         <div class="col-md-12 d-none d-sm-block">
-            <h3>
-                <strong><a href="{{ post.url }}">{{ post.title }}</a></strong>
+            <h3 class="fw-bold">
+                <a href="{{ post.url }}">{{ post.title }}</a>
             </h3>
             <i class="fa fa-calendar"></i> {{ post.date | date: "%B %e, %Y" }}
 
@@ -22,12 +22,15 @@ layout: blog-overview
                     {% endfor %}
                 </ul>
             </div>
+            <div class="hrline"></div>
         </div>
 
 
         <div class="col-12 d-block d-sm-none d-print-none">
-            <h3><strong><a href="{{ post.url }}">{{ post.title }}</a></strong></h3>
+            <h3>
+                <a class="fw-bold" href="{{ post.url }}">{{ post.title }}</a>
+                <span class="fw-light">({{ post.date | date_to_string }}) - {{ post.tags | join: ", "}}</span>
+            </h3>
         </div>
     </div>
-    <div class="hrline"></div>
 {% endfor %}
