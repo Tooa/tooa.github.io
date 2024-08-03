@@ -2,7 +2,7 @@ title: Uli Fahrer
 url: http://www.uli-fahrer.de
 permalink: /notes/:year/:month/:day/:title
 baseurl: ""
-description: "Uli Fahrer: Developer"
+description: "Uli Fahrer: DevSecOps Engineer"
 
 kramdown:
   input: GFM
