@@ -20,10 +20,10 @@
   author: Uli Fahrer
   year: 2013
   month: March
-  booktitle: "In GI-Edition Lecture Notes in Informatics"
+  booktitle: "In GI-Edition Lecture Notes in Informatics Gesellschaft für Informatik (Hrsg.) - Informatiktage 2014"
   pages: 257–260
   location: Potsdam, Germany
-  url: https://dl.gi.de/handle/20.500.12116/4930
+  url: https://dl.gi.de/items/99611c73-c800-44b3-acc1-37e1c439263e
   type: workshop
 
 - title: >
@@ -40,8 +40,7 @@
   type: workshop
 
 - title: >
-      new/s/leak – Information Extraction and Visualization for an Investigative
-       Data Journalists
+      new/s/leak – Information Extraction and Visualization for an Investigative Data Journalists
   author: >
       Seid Muhie Yimam, Heiner Ulrich, Tatiana von Landesberger, Marcel Rosenbach, Michaela Regneri,
       Alexander Panchenko, Franziska Lehmann, Uli Fahrer, Chris Biemann and Kathrin Ballweg
