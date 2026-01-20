@@ -80,16 +80,12 @@ body {
     font-size: 1.8rem;
     line-height: 1.75em;
     color: #3A4145;
-    -webkit-font-feature-settings: 'kern' 1;
-    -moz-font-feature-settings: 'kern' 1;
-    -o-font-feature-settings: 'kern' 1;
+    font-feature-settings: 'kern' 1;
 }
 
 h1, h2, h3,
 h4, h5, h6 {
-    -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
-    -moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
-    -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+    font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     color: #2E2E2E;
     line-height: 1.15em;
     margin: 0 0 0.4em 0;
@@ -120,7 +116,6 @@ span.site-tag a {
 		max-width: 950px;
 	}
 }
-
 tt { margin-top: 30px; margin-bottom: 0px;}
 dd { margin-top: 10px;}
 
@@ -146,9 +141,6 @@ footer > .row { border-top: 1px solid #eee; }
 }
 
 .hrline {
-    background: #ddd;
-    background: -webkit-gradient(linear,left top,right top,from(rgba(255,255,255,0)),color-stop(#ccc),to(rgba(255,255,255,0)));
-    background: -webkit-linear-gradient(left,rgba(255,255,255,0),#ccc,rgba(255,255,255,0));
     background: linear-gradient(to right,rgba(255,255,255,0),#ccc,rgba(255,255,255,0));
     height: 1px;
     margin: 2.5em 0;
@@ -188,11 +180,7 @@ footer > .row { border-top: 1px solid #eee; }
 	background:#0089e0;
 	color:#fff;
 	text-decoration:none;
-	-moz-border-radius-bottomright:4px;
-	-webkit-border-bottom-right-radius:4px;
 	border-bottom-right-radius:4px;
-	-moz-border-radius-topright:4px;
-	-webkit-border-top-right-radius:4px;
 	border-top-right-radius:4px;
 }
 
@@ -217,12 +205,8 @@ footer > .row { border-top: 1px solid #eee; }
 	float:left;
 	width:4px;
 	height:4px;
-	-moz-border-radius:2px;
-	-webkit-border-radius:2px;
 	border-radius:2px;
 	background:#fff;
-	-moz-box-shadow:-1px -1px 2px #004977;
-	-webkit-box-shadow:-1px -1px 2px #004977;
 	box-shadow:-1px -1px 2px #004977;
 }
 
@@ -237,7 +221,6 @@ footer > .row { border-top: 1px solid #eee; }
 .social-icons {
 	height: 50px;
     margin-bottom: 10px;
-    with: 50px;
 }
 
 .social-icons li {
@@ -250,11 +233,6 @@ footer > .row { border-top: 1px solid #eee; }
 	content: '\f101';
 	padding-left: 25px;
 	color: black;
-}
-
-.media {
-    margin: 20px 0;
-    padding:30px;
 }
 
 blockquote.callout {
