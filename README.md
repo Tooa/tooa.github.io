@@ -12,3 +12,17 @@ $ jekyll serve --livereload --port 4001
 # Update Gemfile.lock
 $ bundle update
 ```
+
+## Content
+
+### Blog
+
+Use blockquotes with Kramdown IAL for callouts in blog posts. Available types: `aside`, `tip`, `tease`, `fact`.
+
+```markdown
+> This is an aside message
+{: .callout .callout-aside}
+
+> This is a tip
+{: .callout .callout-tip}
+```

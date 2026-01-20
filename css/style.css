@@ -136,10 +136,10 @@ dt { margin-top: 30px; margin-bottom: 0px;}
 dd { margin-top: 10px;}
 
 /* HEADER */
-.site-header { 
-	padding-top:1.250em; 
-	padding-bottom: 3em; 
-	text-align:center; 
+.site-header {
+	padding-top:1.250em;
+	padding-bottom: 3em;
+	text-align:center;
 }
 
 /* FOOTER */
@@ -272,3 +272,36 @@ footer > .row { border-top: 1px solid #eee; }
     margin: 20px 0;
     padding:30px;
 }
+
+blockquote.callout {
+    margin: 1.5em 0;
+    padding: 0;
+    border: none;
+    border-left: none;
+    font-style: normal;
+}
+
+blockquote.callout p {
+    margin: 0;
+    padding-left: 2em;
+}
+
+blockquote.callout::before,
+blockquote.callout::after {
+    display: block;
+    font-family: monospace;
+    font-size: 0.9em;
+    color: #666;
+}
+
+blockquote.callout-aside::before { content: "<aside>"; }
+blockquote.callout-aside::after { content: "</aside>"; }
+
+blockquote.callout-tip::before { content: "<tip>"; }
+blockquote.callout-tip::after { content: "</tip>"; }
+
+blockquote.callout-tease::before { content: "<tease>"; }
+blockquote.callout-tease::after { content: "</tease>"; }
+
+blockquote.callout-fact::before { content: "<fact>"; }
+blockquote.callout-fact::after { content: "</fact>"; }
