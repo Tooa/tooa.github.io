@@ -7,15 +7,15 @@
             {% for publication in include.publications reversed %}
                 {% if publication.type == include.type %}
                 <li>
-                    <p class="card-text"><small>
-						{{ publication.title }} </br>
+                    <p class="card-text">
+						<span class="fw-semibold">{{ publication.title }}</span> </br>
                         {{ publication.author }}</br>
-                        In: <em>{{ publication.booktitle }}</em>, 
+                        In: <em>{{ publication.booktitle }}</em>,
                         {% if publication.pages %}
                         pages {{ publication.pages }},
                         {% endif %}
                         {{ publication.location }}, {{ publication.month }} {{ publication.year }} (<a href="{{ publication.url }}">pdf</a>).
-                    </small></p>
+                    </p>
                     <p>
                         {% if publication.meta %}
                             {{ publication.meta }}
@@ -27,6 +27,3 @@
         </ol>
     </div>
 </div>
-
-
-
