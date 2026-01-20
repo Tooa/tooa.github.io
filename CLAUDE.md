@@ -12,7 +12,7 @@ Personal portfolio website for Uli Fahrer built with Jekyll. Hosted on GitHub Pa
 
 ```bash
 # Serve locally with live reload
-jekyll servce --livereload --port 4001
+jekyll serve --livereload --port 4001
 ```
 
 This starts the Jekyll development server.  The site will be available at http://localhost:4001.
