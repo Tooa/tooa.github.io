@@ -15,5 +15,11 @@ def test():
     print("hello world")
 ```
 
+Terminal:
+
+```terminal
+$ docker compose ps
+```
+
 > If you've got some alternatives you think I might be interested in, let me know!
 {: .callout .callout-aside}
