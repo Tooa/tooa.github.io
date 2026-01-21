@@ -14,7 +14,9 @@ permalink: /blog/
                 <h3 class="fw-bold">
                     <a href="{{ post.url }}">{{ post.title }}</a>
                 </h3>
-                <i class="fa fa-calendar"></i> {{ post.date | date: "%B %e, %Y" }}
+                <p class="text-muted mb-3">
+                    <i class="fa fa-calendar me-2"></i>{{ post.date | date: "%B %e, %Y" }}
+                </p>
 
                 <div class="box">
                     <p>
