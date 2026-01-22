@@ -1,11 +1,22 @@
+# Setup
 title: Uli Fahrer
+description: "Uli Fahrer: DevSecOps Engineer"
 url: http://www.uli-fahrer.de
 permalink: /blog/:year/:month/:day/:title
 baseurl: ""
-description: "Uli Fahrer: DevSecOps Engineer"
 
 kramdown:
   input: GFM
   syntax_highlighter: rouge
 
+plugins:
+  - jekyll-feed
+
+# Jekyll Feed
+author: Uli Fahrer
+# See: https://github.com/jekyll/jekyll-feed?tab=readme-ov-file#tags
+feed:
+  tags: true
+
+# Github Pages
 github_username: Tooa
