@@ -13,6 +13,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sem quam, elementum 
 ```python
 def test():
     print("hello world")
+    print("...")
 ```
 
 Terminal:

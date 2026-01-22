@@ -26,3 +26,5 @@ Use blockquotes with Kramdown IAL for callouts in blog posts. Available types: `
 > This is a tip
 {: .callout .callout-tip}
 ```
+
+Code highlighting: [Themes](https://github.com/mzlogin/rouge-themes?tab=readme-ov-file#github)
