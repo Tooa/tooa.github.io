@@ -6,18 +6,22 @@
 					<i class="fa fa-code"></i>
 				</span>
 				<div class="navbar-collapse">
+				<!--
+					Active state is set server-side using URL-based matching. Bootstrap's JavaScript
+					only does exact pathname matching, which doesn't work for nested URLs like blog posts.
+				-->
 				<ul class="navbar-nav me-auto mb-0 gap-1">
 					<li class="nav-item">
-						<a class="nav-link px-3 py-2" href="/">Home</a>
+						<a class="nav-link px-3 py-2 {% if page.url == '/' %}active{% endif %}" href="/">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link px-3 py-2" href="/publications/">Publications</a>
+						<a class="nav-link px-3 py-2 {% if page.url contains '/publications/' %}active{% endif %}" href="/publications/">Publications</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link px-3 py-2" href="/projects/">Projects</a>
+						<a class="nav-link px-3 py-2 {% if page.url contains '/projects/' %}active{% endif %}" href="/projects/">Projects</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link px-3 py-2" href="/blog/">Blog</a>
+						<a class="nav-link px-3 py-2 {% if page.url contains '/blog/' %}active{% endif %}" href="/blog/">Blog</a>
 					</li>
 				</ul>
 				<span class="navbar-text d-none d-lg-block">
