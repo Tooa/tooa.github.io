@@ -2,7 +2,7 @@
 date: 2015-12-29 15:10:00
 layout: post
 title: Sample Post
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sem quam, elementum a felis mattis, pretium elementum dolor. Integer sed nulla eu ligula pulvinar rhoncus.
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sem quam, elementum a felis mattis, pretium elementum dolor. Integer sed nulla eu ligula pulvinar rhoncus.
 tags:
 - nlp
 ---
