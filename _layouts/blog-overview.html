@@ -4,14 +4,20 @@ layout: default
 
 <div class="row">
 	<div class="col-md-12">
-		<h2>Browse Articles by Tags</h2>
-		<p>The posts touch a lot of different topics in no particular order. It might be more convenient to browse by tags if you have a topic specific interest.</p>
+		<h1>Blog</h1>
+		<div class="d-flex flex-column flex-md-row justify-content-md-between">
+			<span class="text-muted">Short-form writing about problems solved and lessons learned</span>
+			<a href="/feed.xml" class="text-muted text-decoration-none text-nowrap"><i class="fas fa-rss me-1"></i> Subscribe</a>
+		</div>
 
-		{% include tag-cloud.html %}
+		<hr class="mt-4 mb-3"/>
 
-		<hr class="py-3"/>
+		<small class="text-muted">Browse by tags:</small> {% include tag-cloud.html %}
 
+
+        <div class="pt-4">
         {{ content }}
+        </div>
 
 		<p class="text-end fs-3">| <a href="#">Back to top</a> |</p>
 	</div>

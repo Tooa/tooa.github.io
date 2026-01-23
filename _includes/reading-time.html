@@ -1,0 +1,7 @@
+<!-- Source: https://jekyllcodex.org/without-plugin/reading-time-indicator/# -->
+
+{% assign read_content = include.content | default: content %}
+{% assign words = read_content | number_of_words %}
+{% assign minutes = words | divided_by: 180 %}
+{% if minutes < 1 %}{% assign minutes = 1 %}{% endif %}
+{{ minutes }} min read
