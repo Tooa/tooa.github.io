@@ -17,8 +17,10 @@ layout: default
         {% assign postAge = currentYear | minus: postYear | minus: 1 %}
 
         {% if postAge >= 2 %}
-            <div class="alert alert-warning col-md-12" role="alert">
-                Notice! This post is over {{ postAge }} years old. It may no longer be up to date. Opinions may have changed.
+            <div class="col-md-12">
+                <div class="alert alert-warning" role="alert">
+                    Notice! This post is over {{ postAge }} years old. It may no longer be up to date. Opinions may have changed.
+                </div>
             </div>
         {% endif %}
 
