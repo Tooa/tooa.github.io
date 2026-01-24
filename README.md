@@ -28,3 +28,7 @@ Use blockquotes with Kramdown IAL for callouts in blog posts. Available types: `
 ```
 
 Code highlighting: [Themes](https://github.com/mzlogin/rouge-themes?tab=readme-ov-file#github)
+
+Frontmatter:
+
+- `updated` (optional): Shows "last updated on" date for the article when set
