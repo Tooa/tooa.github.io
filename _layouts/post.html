@@ -31,6 +31,14 @@ layout: default
             {{ content }}
         </div>
 
+        {% if page.updated %}
+        <div class="col-md-12">
+            <p class="text-muted text-end fst-italic mt-4 pt-3 border-top">
+                <small><i class="fas fa-sync-alt"></i> Last updated: {{ page.updated | date: "%B %d, %Y" }}</small>
+            </p>
+        </div>
+        {% endif %}
+
         <div class="col-md-12 blog-section">
             <h2>About the Author</h2>
             <div class="card">
