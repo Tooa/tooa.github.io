@@ -1,5 +1,5 @@
 ---
-date: 2015-12-29 15:10:00
+date: 2015-12-29
 layout: post
 title: Sample Post
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sem quam, elementum a felis mattis, pretium elementum dolor. Integer sed nulla eu ligula pulvinar rhoncus.
