@@ -9,7 +9,6 @@ Personal portfolio website for Uli Fahrer built with Jekyll. Hosted on GitHub Pa
 ## Development Commands
 
 ### Local Development
-
 ```bash
 # Serve locally with live reload
 jekyll serve --livereload --port 4001
@@ -18,18 +17,15 @@ jekyll serve --livereload --port 4001
 This starts the Jekyll development server.  The site will be available at http://localhost:4001.
 
 ### Building the Site
-
 Jekyll builds the site automatically. The output goes to the _site/ directory (which is ignored by git for GitHub Pages deployments).
 
 # Technology
-
 - Jekyll web framework
 - Bootstrap framework for frontend components and grid layout
 - Font Awesome for icons
 - CSS for custom styling
 
 ## Architecture
-
 This is a standard Jekyll site with:
 
 - **Layouts** (`_layouts/`): `default.html` is the base template; other layouts extend it
@@ -39,10 +35,13 @@ This is a standard Jekyll site with:
 - **Static assets**: `css/`, `js/`, `img/`, `webfonts/`
 
 ## Content Structure
-
 - Navigation includes: Home, Publications, Projects, Blog
 
 ## Key Configuration
-
 - `_config.yml`: Site settings, permalink structure, kramdown/rouge for markdown/syntax highlighting
 - `Gemfile`: Uses Jekyll 4.4.1 directly (not github-pages gem due to Ruby 3.4.x compatibility issues)
+
+# Critical Rules
+
+## 1. Code Style
+- Use Bootstrap rather than writing custom CSS
