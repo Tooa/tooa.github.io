@@ -1,29 +1,31 @@
-<div class="card my-4">
-    <div class="card-header">
-        <h3 class="card-title">{{ include.headline }}</h4>
-    </div>
-    <div class="card-body">
-        <ol>
-            {% for publication in include.publications reversed %}
-                {% if publication.type == include.type %}
-                <li>
-                    <p class="card-text">
-						<span class="fw-semibold">{{ publication.title }}</span> </br>
-                        {{ publication.author }}</br>
-                        In: <em>{{ publication.booktitle }}</em>,
-                        {% if publication.pages %}
-                        pages {{ publication.pages }},
-                        {% endif %}
-                        {{ publication.location }}, {{ publication.month }} {{ publication.year }} (<a href="{{ publication.url }}">pdf</a>).
-                    </p>
-                    <p>
-                        {% if publication.meta %}
-                            {{ publication.meta }}
-                        {% endif %}
-                    </p>
-                </li>
+<div class="publication-section my-4">
+    <h2 class="mb-3">{{ include.headline }}</h2>
+
+    {% for publication in include.publications reversed %}
+        {% if publication.type == include.type %}
+        <div class="bg-light rounded p-3 mb-3">
+            <p class="mb-2 mt-0 fw-bold">{{ publication.title }}</p>
+            <p class="mb-2 mt-0">
+                {{ publication.author }}
+            </p>
+            <p class="mb-1">
+                {% if publication.booktitle %}
+                In: <em>{{ publication.booktitle }}</em>,
                 {% endif %}
-            {% endfor %}
-        </ol>
-    </div>
+                {% if publication.pages %}
+                pages {{ publication.pages }},
+                {% endif %}
+                {{ publication.location }}, {{ publication.month }} {{ publication.year }}
+                {% if publication.url %}
+                (<a href="{{ publication.url }}">pdf</a>)
+                {% endif %}
+            </p>
+            {% if publication.meta %}
+            <p class="text-muted mb-0 small">
+                {{ publication.meta }}
+            </p>
+            {% endif %}
+        </div>
+        {% endif %}
+    {% endfor %}
 </div>
