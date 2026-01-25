@@ -4,26 +4,20 @@ title: Publications
 description: publications site
 permalink: /publications/
 ---
+<div class="row">
+  <div class="col-md-12">
+    <h1>Publications</h1>
+    <div class="d-flex flex-column flex-lg-row justify-content-lg-between">
+      <span class="text-muted">Selected publications and academic contributions. View all publications and citations on my Google Scholar profile.</span>
+      <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=hZMWg78AAAAJ" target="_blank" class="text-muted text-decoration-none text-nowrap">
+        <i class="fas fa-graduation-cap me-1"></i> Google Scholar
+      </a>
+    </div>
+    <hr class="mt-4 mb-3"/>
+  </div>
+</div>
 
 <div class="publications">
-
-	<div class="card mb-4 border-0 shadow-sm">
-		<div class="card-body">
-			<div class="row align-items-center g-3">
-				<div class="col-auto">
-					<img src="https://scholar.google.com/citations/images/avatar_scholar_150.jpg" class="rounded" width="60" height="60" alt="Google Scholar">
-				</div>
-				<div class="col d-flex flex-column justify-content-center">
-					<h5 class="mb-1">
-						<a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=hZMWg78AAAAJ" class="text-decoration-none" target="_blank">
-							Google Scholar Profile
-						</a>
-					</h5>
-					<p class="text-muted mb-0 small">View all publications and citations</p>
-				</div>
-			</div>
-		</div>
-	</div>
 
 	{% assign sorted_workshops = site.data.publications | sort: 'year' %}
 
