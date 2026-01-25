@@ -6,7 +6,7 @@ layout: blog-overview
 
 <div class="blog">
     {% for post in site.tags[page.tag] %}
-        <div class="py-4 {% unless forloop.first %}border-top{% endunless %}">
+        <div class="bg-light rounded p-3 mb-3">
             <h3 class="mb-2">
                 <a href="{{ post.url }}" class="text-decoration-none text-dark fw-bold">{{ post.title }}</a>
             </h3>
