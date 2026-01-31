@@ -24,12 +24,16 @@
 						<a class="nav-link px-3 py-2 {% if page.url contains '/blog/' %}active{% endif %}" href="/blog/">Blog</a>
 					</li>
 				</ul>
-				<span class="navbar-text d-none d-lg-block ms-auto">
+				<ul class="navbar-nav mb-0">
+					<li class="nav-item d-flex align-items-center">
+						<button id="theme-toggle" class="btn btn-link nav-link px-3 py-2 m-0" type="button" aria-label="Toggle theme">
+							<i class="fas fa-moon" id="theme-icon"></i>
+						</button>
+					</li>
+				</ul>
+				<span class="navbar-text d-none d-lg-block ms-2">
 					DevSecOps-minded Software Engineer
 				</span>
-				<button id="theme-toggle" class="btn btn-link nav-link px-2" type="button" aria-label="Toggle theme">
-					<i class="fas fa-moon" id="theme-icon"></i>
-				</button>
 				</div>
 			</div>
 		</nav>
