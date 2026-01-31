@@ -96,7 +96,7 @@ p { margin: 0.7em 0; }
 
 .dropcap:first-letter {
 	float: left;
-	color: #3276b1;
+	color: var(--accent-color);
 	font-size: 75px;
 	line-height: 50px;
 	padding-top: 4px;
@@ -199,3 +199,100 @@ blockquote.callout-tease::after { content: "</tease>"; }
 
 blockquote.callout-fact::before { content: "<fact>"; }
 blockquote.callout-fact::after { content: "</fact>"; }
+
+/* ==========================================================================
+	3. Theme - Orange accent and dark mode
+	========================================================================== */
+
+:root {
+    --accent-color: #3276b1;
+    --accent-hover: #285a8e;
+}
+
+[data-bs-theme="dark"] {
+    --accent-color: #e67e22;
+    --accent-hover: #f39c12;
+    --bs-link-color: #e67e22;
+    --bs-link-hover-color: #f39c12;
+    --bs-body-bg: #212737;
+    --bs-body-color: #dee2e6;
+}
+
+[data-bs-theme="dark"] body {
+    background-color: #212737 !important;
+    color: #f0f0f0 !important;
+}
+
+[data-bs-theme="dark"] h1,
+[data-bs-theme="dark"] h2,
+[data-bs-theme="dark"] h3,
+[data-bs-theme="dark"] h4,
+[data-bs-theme="dark"] h5,
+[data-bs-theme="dark"] h6 {
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] a:not(.nav-link) {
+    color: #e67e22;
+}
+
+[data-bs-theme="dark"] a:not(.nav-link):hover {
+    color: #f39c12;
+}
+
+[data-bs-theme="dark"] .navbar.bg-dark {
+    background-color: #1a1f2b !important;
+}
+
+[data-bs-theme="dark"] .hrline {
+    background: #444;
+}
+
+[data-bs-theme="dark"] footer > .row {
+    border-top-color: #444;
+}
+
+[data-bs-theme="dark"] .square-mark li:before {
+    color: #ccc;
+}
+
+[data-bs-theme="dark"] .bg-light {
+    background-color: #2d3548 !important;
+    color: #f0f0f0;
+}
+
+[data-bs-theme="dark"] .post-title,
+[data-bs-theme="dark"] .bg-light h3 a.text-dark {
+    color: #e67e22 !important;
+}
+
+[data-bs-theme="dark"] .bg-light h3 a.text-dark:hover {
+    color: #f39c12 !important;
+}
+
+[data-bs-theme="dark"] .bg-light > p.fw-bold {
+    color: #e67e22;
+}
+
+[data-bs-theme="dark"] .alert-warning {
+    background-color: #2d3548;
+    border-color: #e67e22;
+    color: #f0f0f0;
+}
+
+/* Muted text for various sections in dark mode */
+[data-bs-theme="dark"] footer p,
+[data-bs-theme="dark"] .about p,
+[data-bs-theme="dark"] .publication-section p:not(.fw-bold),
+[data-bs-theme="dark"] .projects p:not(.fw-bold),
+[data-bs-theme="dark"] .content p,
+[data-bs-theme="dark"] .post-date,
+[data-bs-theme="dark"] .card-body h3,
+[data-bs-theme="dark"] .card-body h4,
+[data-bs-theme="dark"] .alert-warning,
+[data-bs-theme="dark"] .dropcap,
+[data-bs-theme="dark"] .row > p,
+[data-bs-theme="dark"] .row h1,
+[data-bs-theme="dark"] .row h3 {
+    color: #adb5bd;
+}
