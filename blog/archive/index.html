@@ -1,0 +1,34 @@
+---
+layout: blog-overview
+title: All Posts
+description: Browse all blog posts by year and month
+permalink: /blog/archive/
+---
+
+<p class="text-muted">All blog posts by year and month</p>
+
+{% assign postsByYear = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+
+{% for year in postsByYear %}
+<div class="mb-5">
+    <h2 class="border-bottom pb-2 mb-3">
+        {{ year.name }}
+        <span class="badge bg-secondary ms-2">{{ year.items | size }}</span>
+    </h2>
+
+    {% assign postsByMonth = year.items | group_by_exp: "post", "post.date | date: '%B'" %}
+
+    {% for month in postsByMonth %}
+    <div class="mb-4">
+        <h3 class="text-muted mb-3">
+            {{ month.name }}
+            <span class="badge bg-light text-dark">{{ month.items | size }}</span>
+        </h3>
+
+        {% for post in month.items %}
+        {% include post-card.html post=post %}
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>
+{% endfor %}
