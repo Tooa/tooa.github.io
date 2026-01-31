@@ -18,51 +18,52 @@ permalink: /projects/
 <div class="projects">
     <div class="row">
         <div class="col-md-12">
-            <h2>Recent Projects</h2>
-            <ul>
-                {% for project in site.data.projects %}
-                    {% if project.active %}
-                        <li>
-                            <p>
-                                <strong>{{ project.title }}</strong>: {{ project.subtitle }}
-                            </p>
-                            <p>
-                                {{ project.description }}
-                            </p>
-
-                            <ul class="list-unstyled">
-                                <li><span class="fw-bold">Project duration:</span> {{ project.duration }}</li>
-                                <li><span class="fw-bold">Project page:</span> {{ project.page }}</li>
-                                <li><span class="fw-bold">Role:</span> {{ project.role }}</li>
-                            </ul>
-                        </li>
-                    {% endif %}
+            <h2 class="mb-3">Recent Projects</h2>
+            {% assign active_projects = site.data.projects | where: "active", true %}
+            {% if active_projects.size > 0 %}
+                {% for project in active_projects %}
+                    <div class="bg-light rounded p-3 mb-3">
+                        <p class="mb-2 mt-0 fw-bold">{{ project.title }}: {{ project.subtitle }}</p>
+                        <p class="mb-2">
+                            {{ project.description }}
+                        </p>
+                        {% if project.role %}
+                        <p class="mb-2">
+                            <span class="fw-bold">Role:</span> {{ project.role }}
+                        </p>
+                        {% endif %}
+                        <small class="text-muted">
+                            <i class="far fa-calendar me-1"></i>{{ project.duration }}
+                            {% if project.page_url %} &bull; <a href="{{ project.page_url }}" target="_blank" class="text-muted"><i class="far fa-compass me-1"></i>Project page</a>{% endif %}
+                        </small>
+                    </div>
                 {% endfor %}
-            </ul>
+            {% else %}
+                <p class="text-muted">No recent projects at the moment.</p>
+            {% endif %}
         </div>
 
-        <div class="col-md-12 blog-section">
-            <h2>Past Projects</h2>
-            <ul>
-                {% for project in site.data.projects %}
-                    {% if project.active != true %}
-                        <li>
-                            <p>
-                                <strong>{{ project.title }}</strong>: {{ project.subtitle }}
-                            </p>
-                            <p>
-                                {{ project.description }}
-                            </p>
-
-                            <ul class="list-unstyled">
-                                <li><span class="fw-bold">Project duration:</span> {{ project.duration }}</li>
-                                <li><span class="fw-bold">Project page:</span> {{ project.page }}</li>
-                                <li><span class="fw-bold">Role:</span> {{ project.role }}</li>
-                            </ul>
-                        </li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
+        <div class="col-md-12">
+            <h2 class="mb-3">Past Projects</h2>
+            {% for project in site.data.projects %}
+                {% if project.active != true %}
+                    <div class="bg-light rounded p-3 mb-3">
+                        <p class="mb-2 mt-0 fw-bold">{{ project.title }}: {{ project.subtitle }}</p>
+                        <p class="mb-2">
+                            {{ project.description }}
+                        </p>
+                        {% if project.role %}
+                        <p class="mb-2">
+                            <span class="fw-bold">Role:</span> {{ project.role }}
+                        </p>
+                        {% endif %}
+                        <small class="text-muted">
+                            <i class="far fa-calendar me-1"></i>{{ project.duration }}
+                            {% if project.page_url %} &bull; <a href="{{ project.page_url }}" target="_blank" class="text-muted"><i class="far fa-compass me-1"></i>Project page</a>{% endif %}
+                        </small>
+                    </div>
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
 </div> <!-- .projects -->
