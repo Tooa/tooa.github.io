@@ -20,3 +20,7 @@ feed:
 
 # Github Pages
 github_username: Tooa
+
+# Include WDK directory
+include:
+  - .well-known
