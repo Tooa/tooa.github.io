@@ -296,3 +296,10 @@ blockquote.callout-fact::after { content: "</fact>"; }
 [data-bs-theme="dark"] .row h3 {
     color: #adb5bd;
 }
+
+/* List items should match body text color in dark mode */
+[data-bs-theme="dark"] .content ul,
+[data-bs-theme="dark"] .content ol,
+[data-bs-theme="dark"] .content li {
+    color: #f0f0f0;
+}

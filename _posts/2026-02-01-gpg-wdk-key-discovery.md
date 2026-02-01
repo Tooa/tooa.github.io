@@ -1,8 +1,8 @@
 ---
 date: 2026-02-01
 layout: post
-title: WKD for openpgp key discovery (Github Pages)
-description: Troubleshooting WKD for opengpg key discovery
+title: WKD for openpgp key discovery on Github Pages
+description: How I debugged and fixed OpenPGP WKD key discovery failures. The solution involved switching from the WDK direct method to the WDK advanced method using a dedicated GitHub Pages repository.
 tags:
 - Linux
 ---
@@ -15,12 +15,15 @@ Back then, I decided to use the **Direct Method**, which is a fallback method fo
 
 Most WKD clients prefer the **Advanced Method** though by looking up the `openpgpkey.domain.tld` domain for advanced key discovery. If this DNS request fails, they will lookup `domain.tld` and then use this host for the direct method.
 
-> The directory structure differs between the direct and the advanced method. Use [webkeydirectory.com](https://www.webkeydirectory.com) to verify your setup after deploying.
+> The directory structure differs between the direct and the advanced method. Use [webkeydirectory.com](https://www.webkeydirectory.com) to verify your setup after setting up the WKD.
 {: .callout .callout-tip}
 
 # Problem Statement & Troubleshooting
 
-While setting up [CachyOS](https://cachyos.org/) this weekend (I use Arch BTW!), the key import via WKD failed:
+While setting up [CachyOS](https://cachyos.org/) this weekend, the key import via WKD failed:
+
+> I use Arch BTW!
+{: .callout .callout-aside}
 
 ```terminal
 $ gpg-wks-client --check -v --debug=ipc mail@domain.tld
@@ -38,7 +41,7 @@ gpg-wks-client: error looking up 'mail@domain.tld' via WKD: General error
 
 The error message revealed nothing useful. The thing called dirmngr (spoken: dirmanager) is a tool that comes with GnuPG. It is responsible for sending or receiving information about public keys, like getting them from a keyserver or via WKD.
 
-If you want to analyze what is going wrong with dirmngr, you can create [log files](https://wiki.gnupg.org/TroubleShooting/DebugWithDirmngr):
+If you want to analyze what is going wrong with dirmngr, you can create [log files](https://wiki.gnupg.org/TroubleShooting/DebugWithDirmngr).
 
 `~/.gnupg/dirmngr.conf`:
 
@@ -48,9 +51,18 @@ verbose
 debug dns,network,lookup
 ```
 
+The debug log below reveals the issue:
+
+- dirmngr first attempts to locate the public key via the advanced method
+- dirmngr successfully resolves `openpgpkey.domain.tld`, but fails to verify the certificate
+- dirmngr skips the direct method as fallback
+
+Despite **no** CNAME configuration, dirmngr successfully resolves `openpgpkey.domain.tld`. In consequence, dirmngr now skips the direct method as fallback.
+
+
 `~/dirmngr.log`:
 
-```log
+```config
 dirmngr[142016.5]: enabled debug flags: dns network lookup
 dirmngr[142016.5]: permanently loaded certificates: 145
 dirmngr[142016.5]:     runtime cached certificates: 0
@@ -87,21 +99,15 @@ dirmngr[142016.0]: SIGTERM received - shutting down ...
 dirmngr[142016.0]: dirmngr (GnuPG) 2.4.9 stopped
 ```
 
-The debug log reveals the issue:
-
-- dirmngr first attempts to locate the public key via the advanced method
-- dirmngr successfully resolves `openpgpkey.domain.tld`, but fails to verify the certificate
-- dirmngr skips the direct method as fallback
-
-Despite **no** CNAME configuration, dirmngr successfully resolves `openpgpkey.domain.tld`. In consequence, dirmngr now skips the direct method as fallback.
-
 # The Solution
 
 I never determined why dirmngr successfully resolves the `openpgpkey.domain.tld` DNS without a CNAME configuration. Investigating would require more time than I had available. So, I switched to the advanced method instead.
 
-I already have a [personal user repository](https://github.com/Tooa/tooa.github.io) hosting my website with a custom CNAME `domain.tld`. Unfortunately, Github Pages does not support multiple CNAMEs for your personal user site repository (`<username>.github.io`) i.e. `domain.tld` and `openpgpkey.domain.tld`. So I created a dedicated [openpgpkey](https://github.com/Tooa/openpgpkey) Github repository hosting the WKD in advanced method structure. I then configured a custom CNAME via my domain service provider that redirects `openpgpkey.domain.tld` to `<username>.github.io`. That way, `domain.tld` still resolves to my website and `openpgpkey.domain.tld` to the WKD.
+I already have a [personal user repository](https://github.com/Tooa/tooa.github.io) hosting my website with a custom CNAME `domain.tld`. But, Github Pages does not support multiple CNAMEs (`domain.tld` and `openpgpkey.domain.tld`) for your personal user site repository (`<username>.github.io`). So I created a dedicated [openpgpkey](https://github.com/Tooa/openpgpkey) Github repository hosting the WKD in advanced method structure.
 
-Switching to the advanced method solved the problem:
+I then configured a custom CNAME via my domain service provider that redirects `openpgpkey.domain.tld` to `<username>.github.io`. That way, `domain.tld` still resolves to my website and `openpgpkey.domain.tld` to the WKD.
+
+In conclusion, switching to the advanced method solved (worked around) the problem:
 
 ```terminal
 $ gpg-wks-client --check -v mail@domain.tld
