@@ -1,7 +1,7 @@
 ---
 date: 2026-02-01
 layout: post
-title: WKD for openpgp key discovery on Github Pages
+title: WKD for OpenPGP key discovery on Github Pages
 description: How I debugged and fixed OpenPGP WKD key discovery failures. The solution involved switching from the WDK direct method to the WDK advanced method using a dedicated GitHub Pages repository.
 tags:
 - Linux
@@ -20,7 +20,7 @@ Most WKD clients prefer the **Advanced Method** though by looking up the `openpg
 
 # Problem Statement & Troubleshooting
 
-While setting up [CachyOS](https://cachyos.org/) this weekend, the key import via WKD failed:
+While setting up a fresh installation of [CachyOS](https://cachyos.org/) this weekend, the key import via WKD failed:
 
 > I use Arch BTW!
 {: .callout .callout-aside}
@@ -103,9 +103,9 @@ dirmngr[142016.0]: dirmngr (GnuPG) 2.4.9 stopped
 
 I never determined why dirmngr successfully resolves the `openpgpkey.domain.tld` DNS without a CNAME configuration. Investigating would require more time than I had available. So, I switched to the advanced method instead.
 
-I already have a [personal user repository](https://github.com/Tooa/tooa.github.io) hosting my website with a custom CNAME `domain.tld`. But, Github Pages does not support multiple CNAMEs (`domain.tld` and `openpgpkey.domain.tld`) for your personal user site repository (`<username>.github.io`). So I created a dedicated [openpgpkey](https://github.com/Tooa/openpgpkey) Github repository hosting the WKD in advanced method structure.
+I already have a [personal user repository](https://github.com/Tooa/tooa.github.io) hosting my website with a custom CNAME `domain.tld`. But, Github Pages do not support multiple CNAME records (`domain.tld` and `openpgpkey.domain.tld`) for this personal user site repository (`<username>.github.io`). So I created a dedicated [openpgpkey](https://github.com/Tooa/openpgpkey) Github Pages repository hosting the WKD in advanced method structure.
 
-I then configured a custom CNAME via my domain service provider that redirects `openpgpkey.domain.tld` to `<username>.github.io`. That way, `domain.tld` still resolves to my website and `openpgpkey.domain.tld` to the WKD.
+I then configured an additional CNAME record via my domain service provider that redirects `openpgpkey.domain.tld` to `<username>.github.io`. That way, `domain.tld` still resolves to my website and `openpgpkey.domain.tld` to the WKD.
 
 In conclusion, switching to the advanced method solved (worked around) the problem:
 
