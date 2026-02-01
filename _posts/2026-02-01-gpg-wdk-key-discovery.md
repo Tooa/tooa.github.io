@@ -4,7 +4,7 @@ layout: post
 title: WKD for OpenPGP key discovery on Github Pages
 description: How I debugged and fixed OpenPGP WKD key discovery failures. The solution involved switching from the WDK direct method to the WDK advanced method using a dedicated GitHub Pages repository.
 tags:
-- Linux
+- pgp
 ---
 
 # Introduction

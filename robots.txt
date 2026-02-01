@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /files/
 Disallow: /about/
+Disallow: /pgp/
 Disallow: /img/

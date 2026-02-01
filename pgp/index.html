@@ -1,0 +1,27 @@
+---
+layout: default
+title: Pretty Good Privacy
+description: My OpenPGP public key for encrypted communication
+---
+
+<div class="row mb-4">
+	<div class="col-md-12">
+		<h1>Pretty Good Privacy</h1>
+		<p>You can retrieve or refresh my public keys via Web Key Directory using:</p>
+		<pre class="bg-light p-3 rounded"><code>gpg --auto-key-locate clear,nodefault,wkd --locate-external-keys [/TODO]@uli-fahrer.de</code></pre>
+	</div>
+</div>
+
+<div class="row mt-4">
+	<div class="col-md-12">
+		<h2>GPG Identity</h2>
+		<p>My primary OpenPGP ed25519 key is:</p>
+		<pre class="bg-light p-3 rounded"><code>pub ed25519 2025-05-31 [SC] [expires: 2030-05-30]
+    48AD 9223 FE84 BD7D EB04 D2D8 1E01 C261 4CC8 19B4
+    sub   cv25519 2025-05-31 [E] [expires: 2030-05-30]
+    sub   ed25519 2025-05-31 [S] [expires: 2027-05-31]</code></pre>
+		<div class="alert alert-warning mt-4" role="alert">
+			Note that you need at least GnuPG 2.1 for handling ECC keys.
+		</div>
+	</div>
+</div>
