@@ -51,13 +51,13 @@ verbose
 debug dns,network,lookup
 ```
 
-The debug log below reveals the issue:
+The debug log below reveals the issue. This is what you can observe in the log:
 
 - dirmngr first attempts to locate the public key via the advanced method
 - dirmngr successfully resolves `openpgpkey.domain.tld`, but fails to verify the certificate
 - dirmngr skips the direct method as fallback
 
-Despite **no** CNAME configuration, dirmngr successfully resolves `openpgpkey.domain.tld`. In consequence, dirmngr now skips the direct method as fallback.
+The Problem: Despite **no** CNAME configuration, dirmngr successfully resolves `openpgpkey.domain.tld`. In consequence, dirmngr now skips the direct method as fallback.
 
 
 `~/dirmngr.log`:
