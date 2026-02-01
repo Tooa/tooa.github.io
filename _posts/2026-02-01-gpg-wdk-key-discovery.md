@@ -11,9 +11,9 @@ tags:
 
 Last year, I created an OpenPGP [Web Key Directory (WKD)](https://wiki.gnupg.org/WKDHosting) hosted on Github Pages to enable automatic lookup of my OpenPGP public keys based on my email address.
 
-Back then, I decided to use the **Direct Method**, which is a fallback method for discovering keys through WKD and does not require setting up a custom DNS record (`openpgpkey.domain.tld`).
+Back then, I decided to use the **Direct Method**, which is a fallback method for discovering keys through WKD and does not require setting up a custom DNS record.
 
-Most WKD clients prefer the **Advanced Method** though by looking up the `openpgpkey.domain.tld` domain for advanced key discovery. If this DNS request fails, they will lookup `domain.tld` and then use this host for the direct method.
+Most WKD clients though prefer the **Advanced Method** by looking up the `openpgpkey.domain.tld` domain for advanced key discovery. If this DNS request fails, they will lookup `domain.tld` and then use this host for the direct method.
 
 > The directory structure differs between the direct and the advanced method. Use [webkeydirectory.com](https://www.webkeydirectory.com) to verify your setup after setting up the WKD.
 {: .callout .callout-tip}
@@ -101,9 +101,9 @@ dirmngr[142016.0]: dirmngr (GnuPG) 2.4.9 stopped
 
 # The Solution
 
-I never determined why dirmngr successfully resolves the `openpgpkey.domain.tld` DNS without a CNAME configuration. Investigating would require more time than I had available. So, I switched to the advanced method instead.
+I never found out why dirmngr successfully resolves the `openpgpkey.domain.tld` DNS without a CNAME configuration. Investigating would require more time than I had available. So, I switched to the advanced method instead.
 
-I already have a [personal user repository](https://github.com/Tooa/tooa.github.io) hosting my website with a custom CNAME `domain.tld`. But, Github Pages do not support multiple CNAME records (`domain.tld` and `openpgpkey.domain.tld`) for this personal user site repository (`<username>.github.io`). So I created a dedicated [openpgpkey](https://github.com/Tooa/openpgpkey) Github Pages repository hosting the WKD in advanced method structure.
+I already have a [personal user repository](https://github.com/Tooa/tooa.github.io) hosting my website with a custom CNAME `domain.tld`. Github Pages do not support multiple CNAME records (`domain.tld` and `openpgpkey.domain.tld`) for this personal user site repository (`<username>.github.io`). So I created a dedicated [openpgpkey](https://github.com/Tooa/openpgpkey) Github Pages repository hosting the WKD for advanced method discovery.
 
 I then configured an additional CNAME record via my domain service provider that redirects `openpgpkey.domain.tld` to `<username>.github.io`. That way, `domain.tld` still resolves to my website and `openpgpkey.domain.tld` to the WKD.
 
